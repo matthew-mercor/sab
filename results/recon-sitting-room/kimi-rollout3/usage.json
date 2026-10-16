@@ -1,0 +1,22 @@
+{
+  "model": "moonshotai/kimi-k3",
+  "run_start": "2026-10-16T21:42:35Z",
+  "this_run": {
+    "api_calls_with_usage": 35,
+    "prompt_tokens": 998726,
+    "cached_prompt_tokens": 594304,
+    "completion_tokens": 85468,
+    "reasoning_tokens": 64441,
+    "cost_usd": 2.673577
+  },
+  "credits_before": {
+    "balance": "388.94321283",
+    "total_used": "116.05678717"
+  },
+  "credits_after": {
+    "balance": "379.10687163",
+    "total_used": "125.89312837"
+  },
+  "used_usd_during_run": 9.8363,
+  "note": "this_run = the API's own token and cost numbers for this run's calls. used_usd_during_run = gateway credit use for the whole key between the two readings (runs at the same time share it)."
+}

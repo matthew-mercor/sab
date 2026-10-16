@@ -1,0 +1,15 @@
+{
+    "task": {
+        "path": "tasks/recon-sitting-room"
+    },
+    "trial_name": "recon-sitting-room__TTV4tDV",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__21-42-37",
+    "agent": {
+        "name": "sceneactbench_agent.harbor_agent:SceneActBenchAgent",
+        "model_name": "moonshotai/kimi-k3",
+        "kwargs": {
+            "api_key_env": "AI_GATEWAY_API_KEY"
+        }
+    },
+    "job_id": "329cf3f1-4964-41a9-9cc3-7f5641f32238"
+}

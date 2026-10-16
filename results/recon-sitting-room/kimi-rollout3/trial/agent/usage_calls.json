@@ -1,0 +1,982 @@
+[
+ {
+  "completion_tokens": 50843,
+  "prompt_tokens": 10845,
+  "total_tokens": 61688,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 48344,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 10816,
+   "video_tokens": 0
+  },
+  "cost": 0.7659768,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.7659768,
+  "gateway_cost": 0.7659768
+ },
+ {
+  "completion_tokens": 596,
+  "prompt_tokens": 13401,
+  "total_tokens": 13997,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 14,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost": 0.049143,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.049143,
+  "gateway_cost": 0.049143
+ },
+ {
+  "completion_tokens": 83,
+  "prompt_tokens": 14023,
+  "total_tokens": 14106,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 10816,
+   "video_tokens": 0
+  },
+  "cost": 0.0141108,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0141108,
+  "gateway_cost": 0.0141108
+ },
+ {
+  "completion_tokens": 15219,
+  "prompt_tokens": 15876,
+  "total_tokens": 31095,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 14987,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.259497,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.259497,
+  "gateway_cost": 0.259497
+ },
+ {
+  "completion_tokens": 426,
+  "prompt_tokens": 16187,
+  "total_tokens": 16613,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.038535,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.038535,
+  "gateway_cost": 0.038535
+ },
+ {
+  "completion_tokens": 1249,
+  "prompt_tokens": 16939,
+  "total_tokens": 18188,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 1096,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 15872,
+   "video_tokens": 0
+  },
+  "cost": 0.0266976,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0266976,
+  "gateway_cost": 0.0266976
+ },
+ {
+  "completion_tokens": 791,
+  "prompt_tokens": 17175,
+  "total_tokens": 17966,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 16896,
+   "video_tokens": 0
+  },
+  "cost": 0.0177708,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0177708,
+  "gateway_cost": 0.0177708
+ },
+ {
+  "completion_tokens": 196,
+  "prompt_tokens": 18332,
+  "total_tokens": 18528,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 17152,
+   "video_tokens": 0
+  },
+  "cost": 0.0116256,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0116256,
+  "gateway_cost": 0.0116256
+ },
+ {
+  "completion_tokens": 146,
+  "prompt_tokens": 18613,
+  "total_tokens": 18759,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 18304,
+   "video_tokens": 0
+  },
+  "cost": 0.0086082,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0086082,
+  "gateway_cost": 0.0086082
+ },
+ {
+  "completion_tokens": 83,
+  "prompt_tokens": 18797,
+  "total_tokens": 18880,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 18560,
+   "video_tokens": 0
+  },
+  "cost": 0.007524,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.007524,
+  "gateway_cost": 0.007524
+ },
+ {
+  "completion_tokens": 399,
+  "prompt_tokens": 20650,
+  "total_tokens": 21049,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost": 0.067935,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.067935,
+  "gateway_cost": 0.067935
+ },
+ {
+  "completion_tokens": 83,
+  "prompt_tokens": 21088,
+  "total_tokens": 21171,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.048093,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.048093,
+  "gateway_cost": 0.048093
+ },
+ {
+  "completion_tokens": 246,
+  "prompt_tokens": 22941,
+  "total_tokens": 23187,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.056097,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.056097,
+  "gateway_cost": 0.056097
+ },
+ {
+  "completion_tokens": 83,
+  "prompt_tokens": 23226,
+  "total_tokens": 23309,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost": 0.070923,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.070923,
+  "gateway_cost": 0.070923
+ },
+ {
+  "completion_tokens": 627,
+  "prompt_tokens": 25079,
+  "total_tokens": 25706,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.068226,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.068226,
+  "gateway_cost": 0.068226
+ },
+ {
+  "completion_tokens": 890,
+  "prompt_tokens": 25758,
+  "total_tokens": 26648,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.074208,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.074208,
+  "gateway_cost": 0.074208
+ },
+ {
+  "completion_tokens": 893,
+  "prompt_tokens": 26711,
+  "total_tokens": 27604,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 25024,
+   "video_tokens": 0
+  },
+  "cost": 0.0259632,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0259632,
+  "gateway_cost": 0.0259632
+ },
+ {
+  "completion_tokens": 698,
+  "prompt_tokens": 27909,
+  "total_tokens": 28607,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.077781,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.077781,
+  "gateway_cost": 0.077781
+ },
+ {
+  "completion_tokens": 757,
+  "prompt_tokens": 28757,
+  "total_tokens": 29514,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 25728,
+   "video_tokens": 0
+  },
+  "cost": 0.0281604,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0281604,
+  "gateway_cost": 0.0281604
+ },
+ {
+  "completion_tokens": 1078,
+  "prompt_tokens": 29715,
+  "total_tokens": 30793,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 26688,
+   "video_tokens": 0
+  },
+  "cost": 0.0332574,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0332574,
+  "gateway_cost": 0.0332574
+ },
+ {
+  "completion_tokens": 938,
+  "prompt_tokens": 30967,
+  "total_tokens": 31905,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 27904,
+   "video_tokens": 0
+  },
+  "cost": 0.0316302,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0316302,
+  "gateway_cost": 0.0316302
+ },
+ {
+  "completion_tokens": 1297,
+  "prompt_tokens": 32167,
+  "total_tokens": 33464,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 28736,
+   "video_tokens": 0
+  },
+  "cost": 0.0383688,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0383688,
+  "gateway_cost": 0.0383688
+ },
+ {
+  "completion_tokens": 962,
+  "prompt_tokens": 33966,
+  "total_tokens": 34928,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.099912,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.099912,
+  "gateway_cost": 0.099912
+ },
+ {
+  "completion_tokens": 1126,
+  "prompt_tokens": 35140,
+  "total_tokens": 36266,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.105894,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.105894,
+  "gateway_cost": 0.105894
+ },
+ {
+  "completion_tokens": 611,
+  "prompt_tokens": 36742,
+  "total_tokens": 37353,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost": 0.119391,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.119391,
+  "gateway_cost": 0.119391
+ },
+ {
+  "completion_tokens": 714,
+  "prompt_tokens": 37527,
+  "total_tokens": 38241,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 29696,
+   "video_tokens": 0
+  },
+  "cost": 0.0431118,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0431118,
+  "gateway_cost": 0.0431118
+ },
+ {
+  "completion_tokens": 886,
+  "prompt_tokens": 38461,
+  "total_tokens": 39347,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 30912,
+   "video_tokens": 0
+  },
+  "cost": 0.0452106,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0452106,
+  "gateway_cost": 0.0452106
+ },
+ {
+  "completion_tokens": 935,
+  "prompt_tokens": 39472,
+  "total_tokens": 40407,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 38464,
+   "video_tokens": 0
+  },
+  "cost": 0.0285882,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0285882,
+  "gateway_cost": 0.0285882
+ },
+ {
+  "completion_tokens": 474,
+  "prompt_tokens": 40572,
+  "total_tokens": 41046,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 39424,
+   "video_tokens": 0
+  },
+  "cost": 0.0223812,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0223812,
+  "gateway_cost": 0.0223812
+ },
+ {
+  "completion_tokens": 882,
+  "prompt_tokens": 41208,
+  "total_tokens": 42090,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 36736,
+   "video_tokens": 0
+  },
+  "cost": 0.0376668,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0376668,
+  "gateway_cost": 0.0376668
+ },
+ {
+  "completion_tokens": 463,
+  "prompt_tokens": 42510,
+  "total_tokens": 42973,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 41152,
+   "video_tokens": 0
+  },
+  "cost": 0.0233646,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0233646,
+  "gateway_cost": 0.0233646
+ },
+ {
+  "completion_tokens": 329,
+  "prompt_tokens": 43207,
+  "total_tokens": 43536,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 32128,
+   "video_tokens": 0
+  },
+  "cost": 0.0478104,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0478104,
+  "gateway_cost": 0.0478104
+ },
+ {
+  "completion_tokens": 83,
+  "prompt_tokens": 43574,
+  "total_tokens": 43657,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 42496,
+   "video_tokens": 0
+  },
+  "cost": 0.0172278,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.0172278,
+  "gateway_cost": 0.0172278
+ },
+ {
+  "completion_tokens": 299,
+  "prompt_tokens": 45427,
+  "total_tokens": 45726,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 6080,
+   "video_tokens": 0
+  },
+  "cost": 0.12435,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.12435,
+  "gateway_cost": 0.12435
+ },
+ {
+  "completion_tokens": 83,
+  "prompt_tokens": 45764,
+  "total_tokens": 45847,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 0,
+   "rejected_prediction_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": null,
+   "cached_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost": 0.138537,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": null,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "market_cost": 0.138537,
+  "gateway_cost": 0.138537
+ }
+]
