@@ -1,0 +1,194 @@
+name: BVB run
+
+# One Harbor run of a BVB task in bvb/tasks/bvb-<task>/ (Harbor 0.23.0).
+#   nop, oracle: the task checks (an empty submission must score 0; the golden at least the floor).
+#   kimi-k3: Harbor's kimi-code agent with moonshotai/kimi-k3 through the Vercel AI Gateway (as in bvb/README.md).
+#   glm-cursor: Harbor's cursor-cli agent with cursor/glm-5p3-flash (key CURSOR_API_KEY).
+# The verifier's judge always uses the Vercel AI Gateway (key AI_GATEWAY_API_KEY, passed as VERCEL_AI_GATEWAY_API_KEY).
+# The results go to the branch bvbres/<task>-<label>.
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: Task name without the bvb- prefix (for example family-room)
+        required: true
+        type: string
+      agent:
+        description: What to run
+        required: true
+        type: choice
+        options:
+          - nop
+          - oracle
+          - kimi-k3
+          - glm-cursor
+      label:
+        description: Name of this run (for example nop, oracle, glm-run1, kimi-rollout1). Letters, digits, '.', '_' and '-' only.
+        required: true
+        type: string
+
+run-name: bvb ${{ inputs.task }} ${{ inputs.label }}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TASK: ${{ inputs.task }}
+      AGENT: ${{ inputs.agent }}
+      LABEL: ${{ inputs.label }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check inputs
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          case "$LABEL" in
+            "" | *[!A-Za-z0-9._-]*) echo "::error::label may use only letters, digits, '.', '_' and '-'"; exit 1 ;;
+          esac
+          case "$TASK" in
+            "" | *[!a-z0-9-]*) echo "::error::task may use only lowercase letters, digits and '-'"; exit 1 ;;
+          esac
+          test -f "bvb/tasks/bvb-$TASK/task.toml" || { echo "::error::bvb/tasks/bvb-$TASK not found"; exit 1; }
+          [ -n "$AI_GATEWAY_API_KEY" ] || { echo "::error::Add the repository secret AI_GATEWAY_API_KEY"; exit 1; }
+          if [ "$AGENT" = glm-cursor ] && [ -z "$CURSOR_API_KEY" ]; then echo "::error::Add the repository secret CURSOR_API_KEY"; exit 1; fi
+          if [ "$AGENT" = oracle ] && [ ! -f "bvb/tasks/bvb-$TASK/solution/golden.blend" ]; then echo "::error::the task has no golden solution"; exit 1; fi
+
+      - name: Disk space
+        run: df -h /
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install Harbor and FFmpeg
+        run: |
+          uv tool install "harbor==0.23.0"
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          echo "runner: $(nproc) CPUs, $(awk '/MemTotal/ {print int($2/1024)}' /proc/meminfo) MB"
+
+      - name: Gateway credits before the run
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          curl -fsS -m 30 -H "Authorization: Bearer $AI_GATEWAY_API_KEY" https://ai-gateway.vercel.sh/v1/credits \
+            -o "$RUNNER_TEMP/credits_before.json" || echo "could not read the gateway credits"
+          date -u +%Y-%m-%dT%H:%M:%SZ > "$RUNNER_TEMP/run_start.txt"
+
+      - name: Harbor run
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          VERCEL_AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          T="bvb/tasks/bvb-$TASK"
+          J="$GITHUB_WORKSPACE/jobs"
+          case "$AGENT" in
+            nop | oracle)
+              harbor run -y -p "$T" -a "$AGENT" -o "$J" ;;
+            kimi-k3)
+              harbor run -y -p "$T" -a kimi-code -m moonshotai/kimi-k3 \
+                --allow-agent-host ai-gateway.vercel.sh \
+                --ae 'KIMI_MODEL_BASE_URL=https://ai-gateway.vercel.sh/v1' \
+                --ae 'KIMI_MODEL_API_KEY=${VERCEL_AI_GATEWAY_API_KEY}' \
+                --ae KIMI_MODEL_MAX_CONTEXT_SIZE=1000000 --ae KIMI_MODEL_CAPABILITIES=image_in,thinking \
+                --ae KIMI_MODEL_THINKING_EFFORT=high --ae KIMI_CODE_EXPERIMENTAL_FLAG=true -o "$J" ;;
+            glm-cursor)
+              harbor run -y -p "$T" -a cursor-cli -m cursor/glm-5p3-flash \
+                --allow-agent-host '*.cursor.sh' --allow-agent-host cursor.com --allow-agent-host '*.cursor.com' \
+                -o "$J" ;;
+          esac
+
+      - name: Gateway credits after the run
+        if: ${{ !cancelled() }}
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          curl -fsS -m 30 -H "Authorization: Bearer $AI_GATEWAY_API_KEY" https://ai-gateway.vercel.sh/v1/credits \
+            -o "$RUNNER_TEMP/credits_after.json" || echo "could not read the gateway credits"
+
+      - name: Collect the results
+        if: ${{ !cancelled() }}
+        run: |
+          OUT="$RUNNER_TEMP/out/results/bvb-$TASK/$LABEL"
+          mkdir -p "$OUT"
+          RES=$(find "$GITHUB_WORKSPACE/jobs" -mindepth 3 -maxdepth 3 -name result.json 2>/dev/null | head -1)
+          TRIAL=""; if [ -n "$RES" ]; then TRIAL=$(dirname "$RES"); fi
+          if [ -n "$TRIAL" ]; then
+            cp -r "$TRIAL" "$OUT/trial"
+            V="$TRIAL/verifier"
+            for f in reward.txt reward_details.json render.mp4; do [ -f "$V/$f" ] && cp "$V/$f" "$OUT/"; done
+            B=$(find "$TRIAL" -name result.blend -type f | head -1)
+            if [ -n "$B" ]; then cp "$B" "$OUT/result.blend"; fi
+            if [ -f "$OUT/render.mp4" ]; then
+              ffmpeg -v error -y -i "$OUT/render.mp4" -vf "scale=320:-2,tile=4x4" -frames:v 1 "$OUT/judge_frames.png" || true
+            fi
+          fi
+          python - "$OUT" <<'EOF'
+          import json, os, sys
+          out = sys.argv[1]; t = os.environ["RUNNER_TEMP"]
+          def load(p):
+              try:
+                  return json.load(open(p))
+              except Exception:
+                  return None
+          before, after = load(f"{t}/credits_before.json"), load(f"{t}/credits_after.json")
+          used = None
+          try:
+              used = round(float(after["total_used"]) - float(before["total_used"]), 4)
+          except Exception:
+              pass
+          res = load(f"{out}/trial/result.json") or {}
+          ar = res.get("agent_result") or {}
+          json.dump({"task": os.environ["TASK"], "agent": os.environ["AGENT"], "label": os.environ["LABEL"], "harbor": "0.23.0",
+                     "run_start": open(f"{t}/run_start.txt").read().strip() if os.path.exists(f"{t}/run_start.txt") else None,
+                     "agent_cost_usd": ar.get("cost_usd"), "agent_input_tokens": ar.get("n_input_tokens"),
+                     "agent_output_tokens": ar.get("n_output_tokens"),
+                     "gateway_credit_used_usd": used,
+                     "note": "gateway_credit_used_usd covers the whole key while this run went (judge calls, agent calls, and any run at the same time).",
+                     "run_url": f'{os.environ["GITHUB_SERVER_URL"]}/{os.environ["GITHUB_REPOSITORY"]}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'},
+                    open(f"{out}/runner.json", "w"), indent=2)
+          reward = open(f"{out}/reward.txt").read().strip() if os.path.exists(f"{out}/reward.txt") else "no reward"
+          d = load(f"{out}/reward_details.json") or {}
+          lines = [f"# bvb-{os.environ['TASK']} {os.environ['LABEL']}: reward {reward}", "",
+                   f"Agent cost: {ar.get('cost_usd')} USD. Gateway credit used while it ran: {used} USD.", ""]
+          qs = d.get("questions") or []
+          if qs:
+              lines += ["| id | counted | kept | correct | render answers |", "|---|---|---|---|---|"]
+              for q in qs:
+                  lines.append(f'| {q.get("id")} | {q.get("counted")} | {q.get("kept")} | {q.get("ground_truth")} | '
+                               f'{"; ".join(map(str, q.get("render_answers") or []))} |')
+          text = "\n".join(lines) + "\n"
+          open(f"{out}/RESULTS.md", "w").write(text)
+          open(os.environ["GITHUB_STEP_SUMMARY"], "a").write(text)
+          print(text)
+          EOF
+
+      - name: Push the results branch
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          cd "$RUNNER_TEMP/out"
+          # Never commit a key, and keep every file under the GitHub size limit.
+          for K in "$CURSOR_API_KEY" "$AI_GATEWAY_API_KEY"; do
+            [ -n "$K" ] || continue
+            grep -rlF -e "$K" . | while read -r f; do echo "removed (contains a key): $f"; rm -f "$f"; done
+          done
+          find . -type f -size +95M -print -delete
+          BR="bvbres/$TASK-$LABEL"
+          git init -q -b main
+          git add -A
+          git -c user.name="l-matthew07" -c user.email="140662900+l-matthew07@users.noreply.github.com" \
+            commit -q -m "BVB results: $TASK $LABEL"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/$BR"
+          echo "Results are on the branch $BR" | tee -a "$GITHUB_STEP_SUMMARY"

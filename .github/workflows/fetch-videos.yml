@@ -1,0 +1,93 @@
+name: Fetch candidate videos
+
+# Download free stock videos (Pexels or Pixabay) for BVB tasks, and make a 4x4 sheet of the
+# 16 evenly spaced frames that the BVB judge would see. The results go to the branch
+# videos/<label>: one folder per video with video.mp4 (max 1080p, no audio), sheet.jpg and info.txt.
+# items: space-separated Pexels or Pixabay video page URLs.
+
+on:
+  workflow_dispatch:
+    inputs:
+      items:
+        description: Space-separated Pexels or Pixabay video page URLs
+        required: true
+        type: string
+      label:
+        description: Branch suffix (videos/<label>). Letters, digits, '.', '_' and '-' only.
+        required: true
+        type: string
+
+run-name: fetch videos ${{ inputs.label }}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ITEMS: ${{ inputs.items }}
+      LABEL: ${{ inputs.label }}
+      UA: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    steps:
+      - name: Check inputs
+        run: |
+          case "$LABEL" in
+            "" | *[!A-Za-z0-9._-]*) echo "::error::label may use only letters, digits, '.', '_' and '-'"; exit 1 ;;
+          esac
+          for u in $ITEMS; do
+            case "$u" in
+              https://www.pexels.com/video/* | https://pixabay.com/videos/*) ;;
+              *) echo "::error::not a Pexels or Pixabay video page: $u"; exit 1 ;;
+            esac
+          done
+
+      - name: Install FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+
+      - name: Download and make sheets
+        run: |
+          mkdir -p out
+          for u in $ITEMS; do
+            id=$(echo "$u" | grep -oE '[0-9]+/?$' | tr -d /)
+            site=pexels; case "$u" in https://pixabay.com/*) site=pixabay ;; esac
+            d="out/$site-$id"; mkdir -p "$d"; echo "page: $u" > "$d/info.txt"
+            rm -f raw.mp4 page.html
+            if [ "$site" = pexels ]; then
+              curl -fsSL -A "$UA" -o raw.mp4 "https://www.pexels.com/download/video/$id/" || true
+              if ! ffprobe -v error raw.mp4 > /dev/null 2>&1; then
+                curl -fsSL -A "$UA" -o page.html "$u" || true
+                f=$(grep -oE 'https://videos\.pexels\.com/video-files/[^"?]+\.mp4' page.html 2>/dev/null | sort -u | head -1)
+                [ -n "$f" ] && curl -fsSL -A "$UA" -o raw.mp4 "$f" || true
+              fi
+            else
+              curl -fsSL -A "$UA" -o page.html "$u" || true
+              f=$(grep -oE 'https://cdn\.pixabay\.com/video/[^"]+_(large|medium)\.mp4' page.html 2>/dev/null | sort -u | head -1)
+              [ -n "$f" ] && curl -fsSL -A "$UA" -o raw.mp4 "$f" || true
+            fi
+            if ! ffprobe -v error raw.mp4 > /dev/null 2>&1; then
+              echo "download: FAILED (page $( [ -s page.html ] && echo fetched || echo blocked ))" | tee -a "$d/info.txt"
+              continue
+            fi
+            ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate:format=duration \
+              -of default=noprint_wrappers=1 raw.mp4 >> "$d/info.txt"
+            dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 raw.mp4)
+            ffmpeg -v error -y -i raw.mp4 -an -vf "scale='if(gt(iw,ih),min(1920,iw),-2)':'if(gt(iw,ih),-2,min(1920,ih))'" \
+              -c:v libx264 -crf 23 -preset veryfast "$d/video.mp4"
+            ffmpeg -v error -y -i "$d/video.mp4" -vf "fps=16/$dur,scale=400:-2,tile=4x4" -frames:v 1 "$d/sheet.jpg"
+            ls -la "$d" | tee -a "$GITHUB_STEP_SUMMARY"
+          done
+          find out -type f -size +95M -print -delete
+
+      - name: Push the branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd out
+          git init -q -b main
+          git add -A
+          git -c user.name="l-matthew07" -c user.email="140662900+l-matthew07@users.noreply.github.com" \
+            commit -q -m "Candidate videos: $LABEL"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/videos/$LABEL"
+          echo "Results are on the branch videos/$LABEL" | tee -a "$GITHUB_STEP_SUMMARY"
