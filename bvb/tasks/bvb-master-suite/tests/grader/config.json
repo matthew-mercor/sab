@@ -1,0 +1,10 @@
+{
+  "judge_model": "alibaba/qwen3-vl-instruct",
+  "judge_base_url": "https://ai-gateway.vercel.sh/v1",
+  "n_frames": 16,
+  "votes": 5,
+  "render_frames": 16,
+  "resolution": 512,
+  "render_timeout_sec": 4800,
+  "min_meshes": 10
+}
