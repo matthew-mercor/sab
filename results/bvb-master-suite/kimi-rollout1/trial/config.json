@@ -1,0 +1,23 @@
+{
+    "task": {
+        "path": "bvb/tasks/bvb-master-suite"
+    },
+    "trial_name": "bvb-master-suite__9Vi763C",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__16-26-14",
+    "agent": {
+        "name": "kimi-code",
+        "model_name": "moonshotai/kimi-k3",
+        "extra_allowed_hosts": [
+            "ai-gateway.vercel.sh"
+        ],
+        "env": {
+            "KIMI_MODEL_BASE_URL": "https://ai-gateway.vercel.sh/v1",
+            "KIMI_MODEL_API_KEY": "${VERCEL_AI_GATEWAY_API_KEY}",
+            "KIMI_MODEL_MAX_CONTEXT_SIZE": "1000000",
+            "KIMI_MODEL_CAPABILITIES": "image_in,thinking",
+            "KIMI_MODEL_THINKING_EFFORT": "high",
+            "KIMI_CODE_EXPERIMENTAL_FLAG": "true"
+        }
+    },
+    "job_id": "7081e35a-6150-41ec-8b70-27b3b5f3ed9c"
+}

@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "shardCount": 16,
+  "createdAt": "2026-10-16T16:28:25.652Z",
+  "valueCodec": "json",
+  "fsyncPolicy": "everysec"
+}

@@ -1,0 +1,72 @@
+2026-10-16T16:28:25.622Z INFO  llm config  turnStep=0.1 provider=openai model=moonshotai/kimi-k3 modelAlias=__kimi_env_model__ thinkingEffort=high systemPromptChars=8254 toolCount=29
+2026-10-16T16:28:25.623Z INFO  llm request  turnStep=0.1
+2026-10-16T16:28:30.815Z INFO  llm response  turnStep=0.1 ttftMs=3837 streamDurationMs=1350 outputTokens=289 requestBuildMs=6 serverFirstTokenMs=3831 serverDecodeMs=1350 clientConsumeMs=0 clientBlockedMs=39
+2026-10-16T16:28:32.877Z INFO  llm request  turnStep=0.2
+2026-10-16T16:28:37.295Z INFO  llm response  turnStep=0.2 ttftMs=3340 streamDurationMs=1076 outputTokens=182 requestBuildMs=2 serverFirstTokenMs=3338 serverDecodeMs=1075 clientConsumeMs=1 clientBlockedMs=13
+2026-10-16T16:28:37.443Z INFO  llm request  turnStep=0.3
+2026-10-16T16:28:46.855Z INFO  llm response  turnStep=0.3 ttftMs=7066 streamDurationMs=2344 outputTokens=379 requestBuildMs=1 serverFirstTokenMs=7065 serverDecodeMs=2343 clientConsumeMs=1 clientBlockedMs=73
+2026-10-16T16:28:46.894Z INFO  llm request  turnStep=0.4
+2026-10-16T16:29:06.858Z INFO  llm response  turnStep=0.4 ttftMs=10457 streamDurationMs=9505 outputTokens=197 requestBuildMs=1 serverFirstTokenMs=10456 serverDecodeMs=9505 clientConsumeMs=0 clientBlockedMs=85
+2026-10-16T16:29:06.940Z INFO  llm request  turnStep=0.5
+2026-10-16T16:29:16.888Z INFO  llm response  turnStep=0.5 ttftMs=9166 streamDurationMs=780 outputTokens=200 requestBuildMs=1 serverFirstTokenMs=9165 serverDecodeMs=780 clientConsumeMs=0 clientBlockedMs=13
+2026-10-16T16:29:16.928Z INFO  llm request  turnStep=0.6
+2026-10-16T16:32:11.029Z INFO  llm response  turnStep=0.6 ttftMs=15308 streamDurationMs=158790 outputTokens=12077 requestBuildMs=1 serverFirstTokenMs=15307 serverDecodeMs=158775 clientConsumeMs=15 clientBlockedMs=2867
+2026-10-16T16:32:11.269Z INFO  llm request  turnStep=0.7
+2026-10-16T16:32:29.510Z INFO  llm response  turnStep=0.7 ttftMs=17686 streamDurationMs=553 outputTokens=177 requestBuildMs=1 serverFirstTokenMs=17685 serverDecodeMs=553 clientConsumeMs=0 clientBlockedMs=6
+2026-10-16T16:32:29.547Z INFO  llm request  turnStep=0.8
+2026-10-16T16:33:51.972Z INFO  llm response  turnStep=0.8 ttftMs=13656 streamDurationMs=68767 outputTokens=9046 requestBuildMs=1 serverFirstTokenMs=13655 serverDecodeMs=68755 clientConsumeMs=12 clientBlockedMs=1681
+2026-10-16T16:33:52.102Z INFO  llm request  turnStep=0.9
+2026-10-16T16:34:07.113Z INFO  llm response  turnStep=0.9 ttftMs=14949 streamDurationMs=60 outputTokens=99 requestBuildMs=2 serverFirstTokenMs=14947 serverDecodeMs=60 clientConsumeMs=0 clientBlockedMs=2
+2026-10-16T16:34:07.134Z INFO  llm request  turnStep=0.10
+2026-10-16T16:37:01.365Z INFO  llm response  turnStep=0.10 ttftMs=14488 streamDurationMs=159741 outputTokens=21170 requestBuildMs=1 serverFirstTokenMs=14487 serverDecodeMs=159725 clientConsumeMs=16 clientBlockedMs=2385
+2026-10-16T16:37:01.393Z INFO  llm request  turnStep=0.11
+2026-10-16T16:37:13.000Z INFO  llm response  turnStep=0.11 ttftMs=11017 streamDurationMs=588 outputTokens=93 requestBuildMs=1 serverFirstTokenMs=11016 serverDecodeMs=588 clientConsumeMs=0 clientBlockedMs=8
+2026-10-16T16:37:14.930Z INFO  llm request  turnStep=0.12
+2026-10-16T16:37:29.375Z INFO  llm response  turnStep=0.12 ttftMs=13011 streamDurationMs=1432 outputTokens=238 requestBuildMs=1 serverFirstTokenMs=13010 serverDecodeMs=1432 clientConsumeMs=0 clientBlockedMs=18
+2026-10-16T16:37:29.395Z INFO  llm request  turnStep=0.13
+2026-10-16T16:37:41.865Z INFO  llm response  turnStep=0.13 ttftMs=12456 streamDurationMs=12 outputTokens=113 requestBuildMs=1 serverFirstTokenMs=12455 serverDecodeMs=12 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T16:42:41.954Z INFO  llm request  turnStep=0.14
+2026-10-16T16:43:00.036Z INFO  llm response  turnStep=0.14 ttftMs=15564 streamDurationMs=2516 outputTokens=261 requestBuildMs=1 serverFirstTokenMs=15563 serverDecodeMs=2516 clientConsumeMs=0 clientBlockedMs=80
+2026-10-16T16:43:00.140Z INFO  llm request  turnStep=0.15
+2026-10-16T16:43:11.682Z WARN  llm request failed  turnStep=0.15 model=__kimi_env_model__ errorName=ChatProviderError errorMessage="Error: Stream error occurred"
+2026-10-16T16:43:12.271Z INFO  llm request  turnStep=0.16
+2026-10-16T16:43:26.347Z INFO  llm response  turnStep=0.16 ttftMs=14065 streamDurationMs=10 outputTokens=100 requestBuildMs=1 serverFirstTokenMs=14064 serverDecodeMs=10 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T16:48:06.446Z INFO  llm request  turnStep=0.17
+2026-10-16T16:48:51.418Z INFO  llm response  turnStep=0.17 ttftMs=39469 streamDurationMs=5500 outputTokens=157 requestBuildMs=4 serverFirstTokenMs=39465 serverDecodeMs=5499 clientConsumeMs=1 clientBlockedMs=114
+2026-10-16T16:48:51.534Z INFO  llm request  turnStep=0.18
+2026-10-16T16:49:09.559Z INFO  llm response  turnStep=0.18 ttftMs=11186 streamDurationMs=6837 outputTokens=161 requestBuildMs=5 serverFirstTokenMs=11181 serverDecodeMs=6836 clientConsumeMs=1 clientBlockedMs=389
+2026-10-16T16:49:09.754Z INFO  llm request  turnStep=0.19
+2026-10-16T16:49:45.718Z INFO  llm response  turnStep=0.19 ttftMs=11262 streamDurationMs=24699 outputTokens=549 requestBuildMs=5 serverFirstTokenMs=11257 serverDecodeMs=24699 clientConsumeMs=0 clientBlockedMs=639
+2026-10-16T16:51:15.836Z INFO  llm request  turnStep=0.20
+2026-10-16T16:51:30.218Z INFO  llm response  turnStep=0.20 ttftMs=11590 streamDurationMs=2787 outputTokens=95 requestBuildMs=2 serverFirstTokenMs=11588 serverDecodeMs=2787 clientConsumeMs=0 clientBlockedMs=49
+2026-10-16T16:51:30.340Z INFO  llm request  turnStep=0.21
+2026-10-16T16:52:02.819Z INFO  llm response  turnStep=0.21 ttftMs=14075 streamDurationMs=18402 outputTokens=571 requestBuildMs=5 serverFirstTokenMs=14070 serverDecodeMs=18399 clientConsumeMs=3 clientBlockedMs=618
+2026-10-16T16:52:02.859Z INFO  llm request  turnStep=0.22
+2026-10-16T16:52:19.045Z INFO  llm response  turnStep=0.22 ttftMs=16177 streamDurationMs=7 outputTokens=249 requestBuildMs=1 serverFirstTokenMs=16176 serverDecodeMs=7 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T16:52:19.067Z INFO  llm request  turnStep=0.23
+2026-10-16T16:52:37.196Z INFO  llm response  turnStep=0.23 ttftMs=18118 streamDurationMs=9 outputTokens=115 requestBuildMs=1 serverFirstTokenMs=18117 serverDecodeMs=9 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T16:52:41.898Z INFO  llm request  turnStep=0.24
+2026-10-16T16:53:11.128Z INFO  llm response  turnStep=0.24 ttftMs=22635 streamDurationMs=6594 outputTokens=249 requestBuildMs=1 serverFirstTokenMs=22634 serverDecodeMs=6594 clientConsumeMs=0 clientBlockedMs=59
+2026-10-16T16:53:11.169Z INFO  llm request  turnStep=0.25
+2026-10-16T16:56:58.346Z INFO  llm response  turnStep=0.25 ttftMs=11131 streamDurationMs=216044 outputTokens=6121 requestBuildMs=1 serverFirstTokenMs=11130 serverDecodeMs=216036 clientConsumeMs=8 clientBlockedMs=2710
+2026-10-16T16:56:58.890Z INFO  llm request  turnStep=0.26
+2026-10-16T16:57:43.046Z INFO  llm response  turnStep=0.26 ttftMs=18086 streamDurationMs=26069 outputTokens=1210 requestBuildMs=1 serverFirstTokenMs=18085 serverDecodeMs=26064 clientConsumeMs=5 clientBlockedMs=279
+2026-10-16T16:57:43.495Z INFO  llm request  turnStep=0.27
+2026-10-16T16:59:00.274Z INFO  llm response  turnStep=0.27 ttftMs=18038 streamDurationMs=58740 outputTokens=2184 requestBuildMs=1 serverFirstTokenMs=18037 serverDecodeMs=58735 clientConsumeMs=5 clientBlockedMs=632
+2026-10-16T16:59:00.351Z INFO  llm request  turnStep=0.28
+2026-10-16T16:59:18.435Z INFO  llm response  turnStep=0.28 ttftMs=17871 streamDurationMs=212 outputTokens=60 requestBuildMs=1 serverFirstTokenMs=17870 serverDecodeMs=212 clientConsumeMs=0 clientBlockedMs=2
+2026-10-16T16:59:18.457Z INFO  llm request  turnStep=0.29
+2026-10-16T17:01:55.225Z INFO  llm response  turnStep=0.29 ttftMs=37031 streamDurationMs=119735 outputTokens=6398 requestBuildMs=1 serverFirstTokenMs=37030 serverDecodeMs=119721 clientConsumeMs=14 clientBlockedMs=1466
+2026-10-16T17:01:55.253Z INFO  llm request  turnStep=0.30
+2026-10-16T17:09:47.016Z INFO  llm response  turnStep=0.30 ttftMs=18102 streamDurationMs=453659 outputTokens=22526 requestBuildMs=1 serverFirstTokenMs=18101 serverDecodeMs=453631 clientConsumeMs=28 clientBlockedMs=4865
+2026-10-16T17:09:47.040Z INFO  llm request  turnStep=0.31
+2026-10-16T17:10:10.167Z INFO  llm response  turnStep=0.31 ttftMs=15500 streamDurationMs=7625 outputTokens=875 requestBuildMs=0 serverFirstTokenMs=15500 serverDecodeMs=7625 clientConsumeMs=0 clientBlockedMs=95
+2026-10-16T17:10:10.198Z INFO  llm request  turnStep=0.32
+2026-10-16T17:10:36.974Z INFO  llm response  turnStep=0.32 ttftMs=26753 streamDurationMs=21 outputTokens=144 requestBuildMs=1 serverFirstTokenMs=26752 serverDecodeMs=21 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T17:10:43.614Z INFO  llm request  turnStep=0.33
+2026-10-16T17:11:05.769Z INFO  llm response  turnStep=0.33 ttftMs=19365 streamDurationMs=2789 outputTokens=255 requestBuildMs=1 serverFirstTokenMs=19364 serverDecodeMs=2789 clientConsumeMs=0 clientBlockedMs=30
+2026-10-16T17:11:05.806Z INFO  llm request  turnStep=0.34
+2026-10-16T17:12:36.226Z INFO  llm response  turnStep=0.34 ttftMs=31407 streamDurationMs=59011 outputTokens=1511 requestBuildMs=1 serverFirstTokenMs=31406 serverDecodeMs=59009 clientConsumeMs=2 clientBlockedMs=552
+2026-10-16T17:12:36.263Z INFO  llm request  turnStep=0.35
+2026-10-16T17:25:42.014Z WARN  llm request failed  turnStep=0.35 model=__kimi_env_model__ errorName=ChatProviderError errorMessage="Error: Stream exceeded maximum duration before function timeout"
+2026-10-16T17:25:42.634Z INFO  llm request  turnStep=0.36

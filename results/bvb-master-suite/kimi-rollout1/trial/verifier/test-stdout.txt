@@ -1,0 +1,1 @@
+reward 0: render failed: TimeoutExpired: Command '['/usr/local/bin/blender_xvfb', '--background', '/app/result.blend', '--python', '/tmp/bvb_render_script_8ecnx0n6/render_one_blend.py', '--', '--frames-dir', '/tmp/bvb_render_frames_lcobko2p/frames', '--resolution', '512', '--num-samples', '16']' timed out after 4800.0 seconds
