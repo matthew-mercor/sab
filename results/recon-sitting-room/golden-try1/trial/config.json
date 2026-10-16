@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "tasks/recon-sitting-room"
+    },
+    "trial_name": "recon-sitting-room__qVERRan",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__20-17-40",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash"
+    },
+    "job_id": "8ceef729-8bc5-415e-ad15-f1cf60c3fb82"
+}

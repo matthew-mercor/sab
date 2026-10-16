@@ -1,0 +1,61 @@
+reward 0.765  (no alignment 0.799);  alignment scale x0.97, yaw -1 deg, shift [ 0.02 -0.04 -0.01]
+
+Bookcase_2     F 1.00  P 1.00  R 1.00  pts 18312  tol 15 cm
+   target  centre [1.529, 0.976, 1.188]  size [0.378, 1.702, 2.376]
+   aligned centre [1.459, 1.043, 1.124]  size [0.498, 1.73, 2.316]
+   raw     centre [1.44, 1.129, 1.19]  size [0.48, 1.778, 2.38]
+   from objects: {np.str_('bookcase_R_39fa79'): 13605, np.str_('bookcase_R_738f2f'): 4073, np.str_('blue_sofa_a6fa9c'): 534, np.str_('blue_sofa_927b61'): 100}
+
+Bookcase_1     F 0.97  P 0.99  R 0.95  pts 17692  tol 15 cm
+   target  centre [1.529, -1.122, 1.188]  size [0.378, 1.702, 2.376]
+   aligned centre [1.496, -1.245, 1.128]  size [0.374, 1.656, 2.316]
+   raw     centre [1.515, -1.23, 1.19]  size [0.33, 1.7, 2.38]
+   from objects: {np.str_('bookcase_L_de6fff'): 13619, np.str_('bookcase_L_68bb81'): 4073}
+
+Cabinet        F 0.69  P 0.70  R 0.69  pts 3305  tol 5 cm
+   target  centre [-0.533, 2.603, 0.348]  size [0.705, 0.337, 0.676]
+   aligned centre [-0.485, 2.474, 0.337]  size [0.699, 0.52, 0.689]
+   raw     centre [-0.56, 2.58, 0.35]  size [0.719, 0.542, 0.7]
+   from objects: {np.str_('cube_shelf'): 3305}
+
+Floor_Lamp     F 0.68  P 0.72  R 0.64  pts 6000  tol 8 cm
+   target  centre [-1.623, -1.273, 0.755]  size [0.187, 0.189, 1.497]
+   aligned centre [-1.577, -1.228, 0.664]  size [0.259, 0.26, 1.292]
+   raw     centre [-1.65, -1.249, 0.665]  size [0.266, 0.267, 1.33]
+   from objects: {np.str_('floor_lamp_3950a4'): 3000, np.str_('floor_lamp_f9e886'): 3000}
+
+TV             F 0.44  P 0.39  R 0.51  pts 7110  tol 5 cm
+   target  centre [0.206, -2.533, 0.813]  size [0.892, 0.248, 0.504]
+   aligned centre [0.253, -2.502, 0.898]  size [0.915, 0.541, 0.717]
+   raw     centre [0.25, -2.54, 0.929]  size [0.934, 0.567, 0.73]
+   from objects: {np.str_('tv_8ca9c8'): 2942, np.str_('tv_1160e5'): 2864, np.str_('tv_9fcdb7'): 1249, np.str_('tv_stand_2ac8d2'): 55}
+
+TV_Stand       F 0.57  P 0.53  R 0.61  pts 8616  tol 6 cm
+   target  centre [0.206, -2.534, 0.286]  size [1.09, 0.474, 0.548]
+   aligned centre [0.244, -2.501, 0.396]  size [1.159, 0.776, 0.819]
+   raw     centre [0.249, -2.539, 0.415]  size [1.195, 0.81, 0.83]
+   from objects: {np.str_('tv_stand_2ac8d2'): 3671, np.str_('tv_stand_0bb1c5'): 3000, np.str_('tv_9fcdb7'): 1751, np.str_('tv_1160e5'): 136, np.str_('tv_8ca9c8'): 58}
+
+Side_Table     F 0.48  P 0.35  R 0.79  pts 6156  tol 4 cm
+   target  centre [-1.096, -1.015, 0.249]  size [0.413, 0.44, 0.477]
+   aligned centre [-1.067, -0.968, 0.312]  size [0.616, 0.493, 0.604]
+   raw     centre [-1.121, -0.971, 0.31]  size [0.633, 0.507, 0.62]
+   from objects: {np.str_('small_table_7e2393'): 2979, np.str_('small_table_e294af'): 2959, np.str_('gray_sofa'): 218}
+
+Coffee_Table   F 0.97  P 0.96  R 0.98  pts 3000  tol 7 cm
+   target  centre [0.785, 0.758, 0.252]  size [0.962, 0.964, 0.463]
+   aligned centre [0.775, 0.694, 0.226]  size [1.017, 1.016, 0.497]
+   raw     centre [0.76, 0.76, 0.25]  size [1.048, 1.047, 0.5]
+   from objects: {np.str_('round_table'): 3000}
+
+Sofa_2         F 0.95  P 0.95  R 0.95  pts 16226  tol 10 cm
+   target  centre [0.815, 2.255, 0.453]  size [1.695, 0.831, 0.886]
+   aligned centre [0.767, 2.23, 0.433]  size [1.749, 1.012, 0.928]
+   raw     centre [0.74, 2.343, 0.469]  size [1.804, 1.029, 0.939]
+   from objects: {np.str_('blue_sofa_a6fa9c'): 13296, np.str_('blue_sofa_927b61'): 2916, np.str_('bookcase_R_39fa79'): 14}
+
+Sofa_1         F 0.89  P 0.82  R 0.96  pts 21226  tol 9 cm
+   target  centre [-1.025, -0.028, 0.429]  size [0.888, 1.398, 0.838]
+   aligned centre [-0.943, -0.058, 0.469]  size [0.948, 1.667, 0.937]
+   raw     centre [-1.003, -0.037, 0.475]  size [0.955, 1.713, 0.95]
+   from objects: {np.str_('gray_sofa'): 21164, np.str_('small_table_e294af'): 41, np.str_('small_table_7e2393'): 21}
