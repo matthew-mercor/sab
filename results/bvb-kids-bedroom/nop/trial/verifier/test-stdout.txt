@@ -1,0 +1,1 @@
+reward 0: no submission at /app/result.blend

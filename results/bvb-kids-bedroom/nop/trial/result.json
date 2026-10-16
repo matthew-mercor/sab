@@ -1,0 +1,115 @@
+{
+    "id": "ca2a5d6d-fae7-49c1-808f-d87439eea0a8",
+    "task_name": "local/bvb-kids-bedroom",
+    "trial_name": "bvb-kids-bedroom__dVDXN5r",
+    "trial_uri": "file:///home/runner/work/sab/sab/jobs/2026-10-16__20-46-13/bvb-kids-bedroom__dVDXN5r",
+    "task_id": {
+        "path": "bvb/tasks/bvb-kids-bedroom"
+    },
+    "source": null,
+    "task_checksum": "266014e695a139e90ebe6adc54c82c5718ba74b3062a1d16d837ce9155505ac9",
+    "config": {
+        "task": {
+            "path": "bvb/tasks/bvb-kids-bedroom",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "bvb-kids-bedroom__dVDXN5r",
+        "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__20-46-13",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "5579f1e3-0392-4889-b0f6-7734bde01758",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T20:46:16.505591Z",
+    "finished_at": "2026-10-16T20:48:22.244295Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T20:46:16.611820Z",
+        "finished_at": "2026-10-16T20:47:40.744886Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T20:47:40.744945Z",
+        "finished_at": "2026-10-16T20:47:40.745003Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T20:47:40.745082Z",
+        "finished_at": "2026-10-16T20:47:42.971399Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T20:47:53.968847Z",
+        "finished_at": "2026-10-16T20:48:22.244279Z"
+    },
+    "step_results": null
+}
