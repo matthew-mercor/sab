@@ -1,0 +1,132 @@
+2026-10-16T20:47:57.757Z INFO  llm config  turnStep=0.1 provider=openai model=moonshotai/kimi-k3 modelAlias=__kimi_env_model__ thinkingEffort=high systemPromptChars=8254 toolCount=29
+2026-10-16T20:47:57.757Z INFO  llm request  turnStep=0.1
+2026-10-16T20:48:04.514Z INFO  llm response  turnStep=0.1 ttftMs=5394 streamDurationMs=1358 outputTokens=126 requestBuildMs=5 serverFirstTokenMs=5389 serverDecodeMs=1358 clientConsumeMs=0 clientBlockedMs=29
+2026-10-16T20:48:04.635Z INFO  llm request  turnStep=0.2
+2026-10-16T20:48:12.258Z INFO  llm response  turnStep=0.2 ttftMs=6186 streamDurationMs=1435 outputTokens=190 requestBuildMs=2 serverFirstTokenMs=6184 serverDecodeMs=1435 clientConsumeMs=0 clientBlockedMs=23
+2026-10-16T20:48:14.628Z INFO  llm request  turnStep=0.3
+2026-10-16T20:48:19.124Z INFO  llm response  turnStep=0.3 ttftMs=4490 streamDurationMs=4 outputTokens=97 requestBuildMs=4 serverFirstTokenMs=4486 serverDecodeMs=4 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T20:48:19.266Z INFO  llm request  turnStep=0.4
+2026-10-16T20:48:36.213Z INFO  llm response  turnStep=0.4 ttftMs=10529 streamDurationMs=6415 outputTokens=288 requestBuildMs=2 serverFirstTokenMs=10527 serverDecodeMs=6415 clientConsumeMs=0 clientBlockedMs=231
+2026-10-16T20:48:36.426Z INFO  llm request  turnStep=0.5
+2026-10-16T20:48:46.655Z INFO  llm response  turnStep=0.5 ttftMs=6886 streamDurationMs=3341 outputTokens=201 requestBuildMs=2 serverFirstTokenMs=6884 serverDecodeMs=3341 clientConsumeMs=0 clientBlockedMs=55
+2026-10-16T20:48:46.838Z INFO  llm request  turnStep=0.6
+2026-10-16T20:48:58.618Z INFO  llm response  turnStep=0.6 ttftMs=8511 streamDurationMs=3267 outputTokens=177 requestBuildMs=2 serverFirstTokenMs=8509 serverDecodeMs=3267 clientConsumeMs=0 clientBlockedMs=46
+2026-10-16T20:48:58.719Z INFO  llm request  turnStep=0.7
+2026-10-16T20:49:05.396Z INFO  llm response  turnStep=0.7 ttftMs=6674 streamDurationMs=1 outputTokens=99 requestBuildMs=2 serverFirstTokenMs=6672 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T20:49:05.492Z INFO  llm request  turnStep=0.8
+2026-10-16T20:52:03.526Z INFO  llm response  turnStep=0.8 ttftMs=14818 streamDurationMs=163213 outputTokens=6004 requestBuildMs=1 serverFirstTokenMs=14817 serverDecodeMs=163207 clientConsumeMs=6 clientBlockedMs=2144
+2026-10-16T20:52:03.580Z INFO  llm request  turnStep=0.9
+2026-10-16T20:52:15.861Z INFO  llm response  turnStep=0.9 ttftMs=8108 streamDurationMs=4171 outputTokens=234 requestBuildMs=2 serverFirstTokenMs=8106 serverDecodeMs=4171 clientConsumeMs=0 clientBlockedMs=46
+2026-10-16T20:52:15.905Z INFO  llm request  turnStep=0.10
+2026-10-16T20:52:34.386Z INFO  llm response  turnStep=0.10 ttftMs=11620 streamDurationMs=6859 outputTokens=259 requestBuildMs=1 serverFirstTokenMs=11619 serverDecodeMs=6858 clientConsumeMs=1 clientBlockedMs=67
+2026-10-16T20:52:34.425Z INFO  llm request  turnStep=0.11
+2026-10-16T20:52:57.136Z INFO  llm response  turnStep=0.11 ttftMs=12801 streamDurationMs=9908 outputTokens=252 requestBuildMs=1 serverFirstTokenMs=12800 serverDecodeMs=9908 clientConsumeMs=0 clientBlockedMs=90
+2026-10-16T20:52:57.174Z INFO  llm request  turnStep=0.12
+2026-10-16T21:00:55.588Z INFO  llm response  turnStep=0.12 ttftMs=10725 streamDurationMs=467688 outputTokens=26152 requestBuildMs=3 serverFirstTokenMs=10722 serverDecodeMs=467661 clientConsumeMs=27 clientBlockedMs=5913
+2026-10-16T21:00:55.613Z INFO  llm request  turnStep=0.13
+2026-10-16T21:05:25.137Z INFO  llm response  turnStep=0.13 ttftMs=16444 streamDurationMs=253078 outputTokens=9817 requestBuildMs=1 serverFirstTokenMs=16443 serverDecodeMs=253078 clientConsumeMs=0 clientBlockedMs=1665
+2026-10-16T21:05:25.178Z INFO  llm request  turnStep=0.14
+2026-10-16T21:05:45.734Z INFO  llm response  turnStep=0.14 ttftMs=17431 streamDurationMs=3123 outputTokens=130 requestBuildMs=1 serverFirstTokenMs=17430 serverDecodeMs=3123 clientConsumeMs=0 clientBlockedMs=32
+2026-10-16T21:05:47.507Z INFO  llm request  turnStep=0.15
+2026-10-16T21:06:03.343Z INFO  llm response  turnStep=0.15 ttftMs=9682 streamDurationMs=6152 outputTokens=217 requestBuildMs=1 serverFirstTokenMs=9681 serverDecodeMs=6152 clientConsumeMs=0 clientBlockedMs=45
+2026-10-16T21:06:03.362Z INFO  llm request  turnStep=0.16
+2026-10-16T21:06:20.692Z INFO  llm response  turnStep=0.16 ttftMs=17327 streamDurationMs=1 outputTokens=93 requestBuildMs=1 serverFirstTokenMs=17326 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:11:20.732Z INFO  llm request  turnStep=0.17
+2026-10-16T21:11:57.094Z INFO  llm response  turnStep=0.17 ttftMs=16195 streamDurationMs=20160 outputTokens=380 requestBuildMs=56 serverFirstTokenMs=16139 serverDecodeMs=20158 clientConsumeMs=2 clientBlockedMs=324
+2026-10-16T21:11:57.122Z INFO  llm request  turnStep=0.18
+2026-10-16T21:12:11.792Z INFO  llm response  turnStep=0.18 ttftMs=11889 streamDurationMs=2779 outputTokens=209 requestBuildMs=2 serverFirstTokenMs=11887 serverDecodeMs=2777 clientConsumeMs=2 clientBlockedMs=57
+2026-10-16T21:12:11.826Z INFO  llm request  turnStep=0.19
+2026-10-16T21:12:25.789Z INFO  llm response  turnStep=0.19 ttftMs=13958 streamDurationMs=3 outputTokens=222 requestBuildMs=1 serverFirstTokenMs=13957 serverDecodeMs=3 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:12:25.807Z INFO  llm request  turnStep=0.20
+2026-10-16T21:12:39.822Z INFO  llm response  turnStep=0.20 ttftMs=14012 streamDurationMs=1 outputTokens=128 requestBuildMs=1 serverFirstTokenMs=14011 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:12:39.846Z INFO  llm request  turnStep=0.21
+2026-10-16T21:14:37.121Z INFO  llm response  turnStep=0.21 ttftMs=11444 streamDurationMs=105829 outputTokens=4493 requestBuildMs=1 serverFirstTokenMs=11443 serverDecodeMs=105818 clientConsumeMs=11 clientBlockedMs=2670
+2026-10-16T21:14:37.215Z INFO  llm request  turnStep=0.22
+2026-10-16T21:15:07.795Z INFO  llm response  turnStep=0.22 ttftMs=30578 streamDurationMs=0 outputTokens=504 requestBuildMs=5 serverFirstTokenMs=30573 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:15:07.842Z INFO  llm request  turnStep=0.23
+2026-10-16T21:15:28.325Z INFO  llm response  turnStep=0.23 ttftMs=13944 streamDurationMs=6488 outputTokens=465 requestBuildMs=2 serverFirstTokenMs=13942 serverDecodeMs=6488 clientConsumeMs=0 clientBlockedMs=239
+2026-10-16T21:15:28.344Z INFO  llm request  turnStep=0.24
+2026-10-16T21:15:51.329Z INFO  llm response  turnStep=0.24 ttftMs=22983 streamDurationMs=0 outputTokens=231 requestBuildMs=1 serverFirstTokenMs=22982 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:15:51.422Z INFO  llm request  turnStep=0.25
+2026-10-16T21:16:09.636Z INFO  llm response  turnStep=0.25 ttftMs=18211 streamDurationMs=1 outputTokens=244 requestBuildMs=1 serverFirstTokenMs=18210 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:16:09.715Z INFO  llm request  turnStep=0.26
+2026-10-16T21:16:21.795Z INFO  llm response  turnStep=0.26 ttftMs=10680 streamDurationMs=1398 outputTokens=112 requestBuildMs=2 serverFirstTokenMs=10678 serverDecodeMs=1398 clientConsumeMs=0 clientBlockedMs=34
+2026-10-16T21:16:21.939Z INFO  llm request  turnStep=0.27
+2026-10-16T21:16:36.392Z INFO  llm response  turnStep=0.27 ttftMs=9485 streamDurationMs=4966 outputTokens=278 requestBuildMs=1 serverFirstTokenMs=9484 serverDecodeMs=4966 clientConsumeMs=0 clientBlockedMs=202
+2026-10-16T21:16:36.834Z INFO  llm request  turnStep=0.28
+2026-10-16T21:18:29.160Z INFO  llm response  turnStep=0.28 ttftMs=6526 streamDurationMs=105743 outputTokens=3448 requestBuildMs=2 serverFirstTokenMs=6524 serverDecodeMs=105736 clientConsumeMs=7 clientBlockedMs=2707
+2026-10-16T21:18:29.218Z INFO  llm request  turnStep=0.29
+2026-10-16T21:19:03.014Z INFO  llm response  turnStep=0.29 ttftMs=33794 streamDurationMs=1 outputTokens=142 requestBuildMs=0 serverFirstTokenMs=33794 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:19:03.028Z INFO  llm request  turnStep=0.30
+2026-10-16T21:19:21.650Z INFO  llm response  turnStep=0.30 ttftMs=18621 streamDurationMs=0 outputTokens=244 requestBuildMs=1 serverFirstTokenMs=18620 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:19:21.670Z INFO  llm request  turnStep=0.31
+2026-10-16T21:20:00.723Z INFO  llm response  turnStep=0.31 ttftMs=39051 streamDurationMs=0 outputTokens=1108 requestBuildMs=1 serverFirstTokenMs=39050 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:20:00.741Z INFO  llm request  turnStep=0.32
+2026-10-16T21:20:31.539Z INFO  llm response  turnStep=0.32 ttftMs=30791 streamDurationMs=5 outputTokens=529 requestBuildMs=0 serverFirstTokenMs=30791 serverDecodeMs=5 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:20:31.558Z INFO  llm request  turnStep=0.33
+2026-10-16T21:20:55.836Z INFO  llm response  turnStep=0.33 ttftMs=14403 streamDurationMs=9874 outputTokens=426 requestBuildMs=1 serverFirstTokenMs=14402 serverDecodeMs=9871 clientConsumeMs=3 clientBlockedMs=99
+2026-10-16T21:20:55.853Z INFO  llm request  turnStep=0.34
+2026-10-16T21:21:19.892Z INFO  llm response  turnStep=0.34 ttftMs=24036 streamDurationMs=1 outputTokens=301 requestBuildMs=1 serverFirstTokenMs=24035 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:21:19.908Z INFO  llm request  turnStep=0.35
+2026-10-16T21:21:47.490Z INFO  llm response  turnStep=0.35 ttftMs=27579 streamDurationMs=1 outputTokens=85 requestBuildMs=1 serverFirstTokenMs=27578 serverDecodeMs=1 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:21:49.216Z INFO  llm request  turnStep=0.36
+2026-10-16T21:22:09.572Z INFO  llm response  turnStep=0.36 ttftMs=19805 streamDurationMs=549 outputTokens=127 requestBuildMs=1 serverFirstTokenMs=19804 serverDecodeMs=549 clientConsumeMs=0 clientBlockedMs=5
+2026-10-16T21:22:09.592Z INFO  llm request  turnStep=0.37
+2026-10-16T21:22:27.712Z INFO  llm response  turnStep=0.37 ttftMs=12798 streamDurationMs=5320 outputTokens=247 requestBuildMs=1 serverFirstTokenMs=12797 serverDecodeMs=5317 clientConsumeMs=3 clientBlockedMs=111
+2026-10-16T21:22:27.948Z INFO  llm request  turnStep=0.38
+2026-10-16T21:22:42.893Z INFO  llm response  turnStep=0.38 ttftMs=10102 streamDurationMs=4800 outputTokens=293 requestBuildMs=9 serverFirstTokenMs=10093 serverDecodeMs=4799 clientConsumeMs=1 clientBlockedMs=153
+2026-10-16T21:23:42.255Z INFO  llm request  turnStep=0.39
+2026-10-16T21:24:00.368Z INFO  llm response  turnStep=0.39 ttftMs=11910 streamDurationMs=6202 outputTokens=243 requestBuildMs=1 serverFirstTokenMs=11909 serverDecodeMs=6201 clientConsumeMs=1 clientBlockedMs=52
+2026-10-16T21:24:00.390Z INFO  llm request  turnStep=0.40
+2026-10-16T21:25:08.397Z INFO  llm response  turnStep=0.40 ttftMs=20199 streamDurationMs=47807 outputTokens=1127 requestBuildMs=1 serverFirstTokenMs=20198 serverDecodeMs=47807 clientConsumeMs=0 clientBlockedMs=415
+2026-10-16T21:25:08.426Z INFO  llm request  turnStep=0.41
+2026-10-16T21:26:35.021Z INFO  llm response  turnStep=0.41 ttftMs=29543 streamDurationMs=57050 outputTokens=1537 requestBuildMs=1 serverFirstTokenMs=29542 serverDecodeMs=57048 clientConsumeMs=2 clientBlockedMs=613
+2026-10-16T21:26:35.043Z INFO  llm request  turnStep=0.42
+2026-10-16T21:29:40.303Z INFO  llm response  turnStep=0.42 ttftMs=32217 streamDurationMs=153041 outputTokens=6796 requestBuildMs=1 serverFirstTokenMs=32216 serverDecodeMs=153033 clientConsumeMs=8 clientBlockedMs=2002
+2026-10-16T21:29:40.353Z INFO  llm request  turnStep=0.43
+2026-10-16T21:30:23.970Z INFO  llm response  turnStep=0.43 ttftMs=14782 streamDurationMs=28834 outputTokens=1096 requestBuildMs=1 serverFirstTokenMs=14781 serverDecodeMs=28831 clientConsumeMs=3 clientBlockedMs=350
+2026-10-16T21:30:24.001Z INFO  llm request  turnStep=0.44
+2026-10-16T21:35:34.522Z INFO  llm response  turnStep=0.44 ttftMs=17934 streamDurationMs=292585 outputTokens=9420 requestBuildMs=1 serverFirstTokenMs=17933 serverDecodeMs=292563 clientConsumeMs=22 clientBlockedMs=3412
+2026-10-16T21:35:34.539Z INFO  llm request  turnStep=0.45
+2026-10-16T21:35:53.469Z INFO  llm response  turnStep=0.45 ttftMs=18918 streamDurationMs=11 outputTokens=188 requestBuildMs=1 serverFirstTokenMs=18917 serverDecodeMs=11 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:35:53.487Z INFO  llm request  turnStep=0.46
+2026-10-16T21:36:24.901Z INFO  llm response  turnStep=0.46 ttftMs=31403 streamDurationMs=9 outputTokens=186 requestBuildMs=2 serverFirstTokenMs=31401 serverDecodeMs=9 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:36:24.920Z INFO  llm request  turnStep=0.47
+2026-10-16T21:36:41.857Z INFO  llm response  turnStep=0.47 ttftMs=16904 streamDurationMs=33 outputTokens=186 requestBuildMs=1 serverFirstTokenMs=16903 serverDecodeMs=33 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:36:41.876Z INFO  llm request  turnStep=0.48
+2026-10-16T21:37:00.611Z INFO  llm response  turnStep=0.48 ttftMs=18725 streamDurationMs=8 outputTokens=320 requestBuildMs=1 serverFirstTokenMs=18724 serverDecodeMs=8 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:37:00.629Z INFO  llm request  turnStep=0.49
+2026-10-16T21:37:50.818Z INFO  llm response  turnStep=0.49 ttftMs=22302 streamDurationMs=27885 outputTokens=1050 requestBuildMs=1 serverFirstTokenMs=22301 serverDecodeMs=27885 clientConsumeMs=0 clientBlockedMs=212
+2026-10-16T21:37:50.839Z INFO  llm request  turnStep=0.50
+2026-10-16T21:38:07.343Z INFO  llm response  turnStep=0.50 ttftMs=16493 streamDurationMs=9 outputTokens=128 requestBuildMs=2 serverFirstTokenMs=16491 serverDecodeMs=9 clientConsumeMs=0 clientBlockedMs=2
+2026-10-16T21:38:07.362Z INFO  llm request  turnStep=0.51
+2026-10-16T21:38:32.274Z INFO  llm response  turnStep=0.51 ttftMs=24901 streamDurationMs=9 outputTokens=346 requestBuildMs=1 serverFirstTokenMs=24900 serverDecodeMs=9 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:38:32.293Z INFO  llm request  turnStep=0.52
+2026-10-16T21:39:32.591Z INFO  llm response  turnStep=0.52 ttftMs=60288 streamDurationMs=8 outputTokens=1032 requestBuildMs=1 serverFirstTokenMs=60287 serverDecodeMs=8 clientConsumeMs=0 clientBlockedMs=2
+2026-10-16T21:39:32.609Z INFO  llm request  turnStep=0.53
+2026-10-16T21:39:57.153Z INFO  llm response  turnStep=0.53 ttftMs=19503 streamDurationMs=5040 outputTokens=174 requestBuildMs=2 serverFirstTokenMs=19501 serverDecodeMs=5040 clientConsumeMs=0 clientBlockedMs=43
+2026-10-16T21:39:57.175Z INFO  llm request  turnStep=0.54
+2026-10-16T21:40:33.999Z INFO  llm response  turnStep=0.54 ttftMs=36813 streamDurationMs=8 outputTokens=143 requestBuildMs=1 serverFirstTokenMs=36812 serverDecodeMs=8 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:40:34.023Z INFO  llm request  turnStep=0.55
+2026-10-16T21:40:58.292Z INFO  llm response  turnStep=0.55 ttftMs=19269 streamDurationMs=4997 outputTokens=219 requestBuildMs=1 serverFirstTokenMs=19268 serverDecodeMs=4996 clientConsumeMs=1 clientBlockedMs=323
+2026-10-16T21:42:07.636Z INFO  llm request  turnStep=0.56
+2026-10-16T21:42:44.098Z INFO  llm response  turnStep=0.56 ttftMs=36435 streamDurationMs=24 outputTokens=93 requestBuildMs=1 serverFirstTokenMs=36434 serverDecodeMs=24 clientConsumeMs=0 clientBlockedMs=2
+2026-10-16T21:42:44.122Z INFO  llm request  turnStep=0.57
+2026-10-16T21:43:17.468Z INFO  llm response  turnStep=0.57 ttftMs=17344 streamDurationMs=16000 outputTokens=1454 requestBuildMs=1 serverFirstTokenMs=17343 serverDecodeMs=16000 clientConsumeMs=0 clientBlockedMs=315
+2026-10-16T21:43:17.490Z INFO  llm request  turnStep=0.58
+2026-10-16T21:44:49.204Z INFO  llm response  turnStep=0.58 ttftMs=19333 streamDurationMs=72379 outputTokens=1391 requestBuildMs=1 serverFirstTokenMs=19332 serverDecodeMs=72376 clientConsumeMs=3 clientBlockedMs=712
+2026-10-16T21:44:49.222Z INFO  llm request  turnStep=0.59
+2026-10-16T21:45:14.016Z INFO  llm response  turnStep=0.59 ttftMs=24767 streamDurationMs=25 outputTokens=176 requestBuildMs=2 serverFirstTokenMs=24765 serverDecodeMs=25 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:45:14.034Z INFO  llm request  turnStep=0.60
+2026-10-16T21:45:46.880Z INFO  llm response  turnStep=0.60 ttftMs=32838 streamDurationMs=7 outputTokens=160 requestBuildMs=1 serverFirstTokenMs=32837 serverDecodeMs=7 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:45:46.900Z INFO  llm request  turnStep=0.61
+2026-10-16T21:46:10.076Z INFO  llm response  turnStep=0.61 ttftMs=23163 streamDurationMs=11 outputTokens=85 requestBuildMs=1 serverFirstTokenMs=23162 serverDecodeMs=11 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:46:11.872Z INFO  llm request  turnStep=0.62
+2026-10-16T21:46:39.100Z INFO  llm response  turnStep=0.62 ttftMs=22978 streamDurationMs=4248 outputTokens=177 requestBuildMs=2 serverFirstTokenMs=22976 serverDecodeMs=4248 clientConsumeMs=0 clientBlockedMs=44
+2026-10-16T21:46:40.855Z INFO  llm request  turnStep=0.63
+2026-10-16T21:47:20.424Z INFO  llm response  turnStep=0.63 ttftMs=39556 streamDurationMs=11 outputTokens=173 requestBuildMs=1 serverFirstTokenMs=39555 serverDecodeMs=11 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:47:20.446Z INFO  llm request  turnStep=0.64
+2026-10-16T21:47:44.658Z INFO  llm response  turnStep=0.64 ttftMs=24201 streamDurationMs=10 outputTokens=158 requestBuildMs=1 serverFirstTokenMs=24200 serverDecodeMs=10 clientConsumeMs=0 clientBlockedMs=1
+2026-10-16T21:47:44.676Z INFO  llm request  turnStep=0.65
+2026-10-16T21:48:03.110Z INFO  llm response  turnStep=0.65 ttftMs=18422 streamDurationMs=10 outputTokens=127 requestBuildMs=1 serverFirstTokenMs=18421 serverDecodeMs=10 clientConsumeMs=0 clientBlockedMs=2
+2026-10-16T21:48:03.134Z INFO  llm request  turnStep=0.66

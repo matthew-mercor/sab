@@ -1,0 +1,8 @@
+Saved: '/app/test/r_227.png'
+Time: 00:22.94 (Saving: 00:00.02)
+
+set ('eevee', 'taa_render_samples')
+set ('eevee', 'taa_samples')
+RENDER DONE
+
+Blender quit

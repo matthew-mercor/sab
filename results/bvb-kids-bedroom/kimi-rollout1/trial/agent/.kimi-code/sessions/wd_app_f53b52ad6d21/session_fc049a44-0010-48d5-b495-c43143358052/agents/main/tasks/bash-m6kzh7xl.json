@@ -1,0 +1,1 @@
+{"taskId":"bash-m6kzh7xl","description":"Render 4 test frames at reduced res","status":"completed","detached":true,"startedAt":1792185729580,"endedAt":1792185822237,"kind":"process","command":"cd /app && blender_run --python /app/render_test.py 2>&1 | tail -8","pid":1792,"exitCode":0,"parentToolCallId":"call_891f1f07603a582f9a5a8699132b928f"}

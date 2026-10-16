@@ -1,0 +1,424 @@
+{
+  "reward": 0.6666666666666666,
+  "kept": 10,
+  "counted": 15,
+  "judge_model": "alibaba/qwen3-vl-instruct",
+  "judge_base_url": "https://ai-gateway.vercel.sh/v1",
+  "votes": 5,
+  "n_frames": 16,
+  "scene": {
+    "has_camera": true,
+    "camera_animated": true,
+    "meshes": 164,
+    "lights": 6,
+    "frame_start": 1,
+    "frame_end": 227
+  },
+  "questions": [
+    {
+      "id": "954054",
+      "question": "At the very start, where in the image is the bed: A. center, B. no bed visible, C. bottom right, or D. bottom left?",
+      "ground_truth": "C",
+      "options": [
+        "A. center",
+        "B. no bed visible",
+        "C. bottom right",
+        "D. bottom left"
+      ],
+      "source_answers": [
+        "C. bottom right",
+        "C. bottom right",
+        "C. bottom right",
+        "C. bottom right",
+        "C. bottom right"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C. bottom right",
+        "C. bottom right",
+        "C",
+        "C",
+        "C. bottom right"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954030",
+      "question": "In the first frames, what is on top of the dresser at the far left: A. stack of books, B. table lamp, C. small toys, or D. potted plant?",
+      "ground_truth": "C",
+      "options": [
+        "A. stack of books",
+        "B. table lamp",
+        "C. small toys",
+        "D. potted plant"
+      ],
+      "source_answers": [
+        "C. small toys",
+        "C. small toys",
+        "C. small toys",
+        "C. small toys",
+        "C. small toys"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C. small toys",
+        "C. small toys",
+        "C. small toys",
+        "C. small toys",
+        "C. small toys"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954009",
+      "question": "In the first frames, what is visible through the open doorway on the left: A. framed baby photo, B. staircase going up, C. no open doorway, or D. bathroom sink?",
+      "ground_truth": "A",
+      "options": [
+        "A. framed baby photo",
+        "B. staircase going up",
+        "C. no open doorway",
+        "D. bathroom sink"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954050",
+      "question": "What hangs from the ceiling at the left of the headboard: A. beaded chandelier, B. paper star lantern, C. wicker pendant shade, or D. paper globe lantern?",
+      "ground_truth": "B",
+      "options": [
+        "A. beaded chandelier",
+        "B. paper star lantern",
+        "C. wicker pendant shade",
+        "D. paper globe lantern"
+      ],
+      "source_answers": [
+        "B. paper star lantern",
+        "B. paper star lantern",
+        "B. paper star lantern",
+        "B. paper star lantern",
+        "B. paper star lantern"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. paper star lantern",
+        "B. paper star lantern",
+        "B. paper star lantern",
+        "B. paper star lantern",
+        "B. paper star lantern"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954015",
+      "question": "Facing the headboard, what is on the back wall just left of the headboard: A. bare wall, B. tall window, C. tall bookshelf, or D. closed panel door?",
+      "ground_truth": "D",
+      "options": [
+        "A. bare wall",
+        "B. tall window",
+        "C. tall bookshelf",
+        "D. closed panel door"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A. bare wall",
+        "A",
+        "A. bare wall",
+        "A. bare wall",
+        "A. bare wall"
+      ],
+      "kept": false
+    },
+    {
+      "id": "954049",
+      "question": "What hangs high on the wall above the headboard: A. woven wall tapestry, B. framed canvas print, C. wall-mounted shelf, or D. pennant flag banner?",
+      "ground_truth": "D",
+      "options": [
+        "A. woven wall tapestry",
+        "B. framed canvas print",
+        "C. wall-mounted shelf",
+        "D. pennant flag banner"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954006",
+      "question": "What does the bed's headboard look like: A. flat dark wood, B. tufted fabric panel, C. arched lattice panel, or D. black metal bars?",
+      "ground_truth": "C",
+      "options": [
+        "A. flat dark wood",
+        "B. tufted fabric panel",
+        "C. arched lattice panel",
+        "D. black metal bars"
+      ],
+      "source_answers": [
+        "C",
+        "C. arched lattice panel",
+        "C. arched lattice panel",
+        "C",
+        "C"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "C",
+        "C"
+      ],
+      "kept": false
+    },
+    {
+      "id": "954036",
+      "question": "What shape is the top edge of the footboard: A. pointed peak, B. no footboard, C. straight line, or D. curved arch?",
+      "ground_truth": "D",
+      "options": [
+        "A. pointed peak",
+        "B. no footboard",
+        "C. straight line",
+        "D. curved arch"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D. curved arch"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D. curved arch",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954048",
+      "question": "In the middle of the video, where is the star lantern compared with the chalkboard sign: A. no lantern visible, B. left of it, C. right of it, or D. below it?",
+      "ground_truth": "B",
+      "options": [
+        "A. no lantern visible",
+        "B. left of it",
+        "C. right of it",
+        "D. below it"
+      ],
+      "source_answers": [
+        "B. left of it",
+        "B. left of it",
+        "B. left of it",
+        "B. left of it",
+        "B. left of it"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. left of it",
+        "B. left of it",
+        "B. left of it",
+        "B. left of it",
+        "B. left of it"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954004",
+      "question": "Which words are written on the framed sign by the bed: A. HOME SWEET HOME, B. DREAM BIG LITTLE ONE, C. YOU ARE A CHILD OF GOD, or D. no sign is visible?",
+      "ground_truth": "C",
+      "options": [
+        "A. HOME SWEET HOME",
+        "B. DREAM BIG LITTLE ONE",
+        "C. YOU ARE A CHILD OF GOD",
+        "D. no sign is visible"
+      ],
+      "source_answers": [
+        "C. YOU ARE A CHILD OF GOD",
+        "C. YOU ARE A CHILD OF GOD",
+        "C. YOU ARE A CHILD OF GOD",
+        "C. YOU ARE A CHILD OF GOD",
+        "C. YOU ARE A CHILD OF GOD"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": false
+    },
+    {
+      "id": "954016",
+      "question": "What is on top of the nightstand: A. lamp and framed photo, B. lamp and small bowl, C. lamp and stack of books, or D. lamp and alarm clock?",
+      "ground_truth": "B",
+      "options": [
+        "A. lamp and framed photo",
+        "B. lamp and small bowl",
+        "C. lamp and stack of books",
+        "D. lamp and alarm clock"
+      ],
+      "source_answers": [
+        "B. lamp and small bowl",
+        "B. lamp and small bowl",
+        "B",
+        "B",
+        "B. lamp and small bowl"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": false
+    },
+    {
+      "id": "954039",
+      "question": "On the nightstand, where is the small bowl compared with the lamp: A. left of it, B. right of it, C. on top of it, or D. no bowl there?",
+      "ground_truth": "B",
+      "options": [
+        "A. left of it",
+        "B. right of it",
+        "C. on top of it",
+        "D. no bowl there"
+      ],
+      "source_answers": [
+        "B. right of it",
+        "B. right of it",
+        "B. right of it",
+        "B. right of it",
+        "B"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": false
+    },
+    {
+      "id": "954005",
+      "question": "What sits on the floor in the corner to the right of the nightstand: A. painted toy chest, B. fluffy round beanbag, C. nothing is there, or D. wooden rocking chair?",
+      "ground_truth": "B",
+      "options": [
+        "A. painted toy chest",
+        "B. fluffy round beanbag",
+        "C. nothing is there",
+        "D. wooden rocking chair"
+      ],
+      "source_answers": [
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag",
+        "B. fluffy round beanbag"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954021",
+      "question": "In the last frames, where is the beanbag compared with the window: A. right of it, B. above it, C. below and left of it, or D. no beanbag visible?",
+      "ground_truth": "C",
+      "options": [
+        "A. right of it",
+        "B. above it",
+        "C. below and left of it",
+        "D. no beanbag visible"
+      ],
+      "source_answers": [
+        "C. below and left of it",
+        "C. below and left of it",
+        "C. below and left of it",
+        "C. below and left of it",
+        "C. below and left of it"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C. below and left of it",
+        "C. below and left of it",
+        "C. below and left of it",
+        "C. below and left of it",
+        "C. below and left of it"
+      ],
+      "kept": true
+    },
+    {
+      "id": "954041",
+      "question": "At the very end, what fills the right half of the image: A. dresser and doorway, B. window and beanbag, C. posters and closet, or D. bed and headboard?",
+      "ground_truth": "B",
+      "options": [
+        "A. dresser and doorway",
+        "B. window and beanbag",
+        "C. posters and closet",
+        "D. bed and headboard"
+      ],
+      "source_answers": [
+        "B. window and beanbag",
+        "B. window and beanbag",
+        "B. window and beanbag",
+        "B. window and beanbag",
+        "B. window and beanbag"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. window and beanbag",
+        "B. window and beanbag",
+        "B. window and beanbag",
+        "B. window and beanbag",
+        "B. window and beanbag"
+      ],
+      "kept": true
+    }
+  ]
+}
