@@ -1,0 +1,58 @@
+reward 0.188  (no alignment 0.076);  alignment scale x0.08, yaw -96 deg, shift [0.38 0.58 0.39]
+
+Bookcase_2     F 0.18  P 0.34  R 0.12  pts 4623  tol 15 cm
+   target  centre [1.529, 0.976, 1.188]  size [0.378, 1.702, 2.376]
+   aligned centre [2.004, 1.157, 0.717]  size [1.955, 2.464, 0.391]
+   raw     centre [-9.126, 18.545, 0.0]  size [32.366, 22.905, 0.0]
+   from objects: {np.str_('RenderGround'): 4623}
+
+Bookcase_1     F 0.14  P 0.26  R 0.10  pts 5081  tol 15 cm
+   target  centre [1.529, -1.122, 1.188]  size [0.378, 1.702, 2.376]
+   aligned centre [1.523, -1.085, 0.653]  size [2.383, 2.024, 0.481]
+   raw     centre [17.573, 15.824, 0.0]  size [24.839, 28.351, 0.0]
+   from objects: {np.str_('RenderGround'): 5081}
+
+Cabinet        F 0.10  P 0.09  R 0.12  pts 3168  tol 5 cm
+   target  centre [-0.533, 2.603, 0.348]  size [0.705, 0.337, 0.676]
+   aligned centre [-0.922, 2.413, 0.097]  size [1.96, 1.713, 0.391]
+   raw     centre [-20.049, -18.591, 0.0]  size [19.892, 22.811, 0.0]
+   from objects: {np.str_('RenderGround'): 3168}
+
+Floor_Lamp     F 0.09  P 0.07  R 0.14  pts 970  tol 8 cm
+   target  centre [-1.623, -1.273, 0.755]  size [0.187, 0.189, 1.497]
+   aligned centre [-1.696, -1.239, -0.005]  size [1.121, 0.955, 0.236]
+   raw     centre [24.776, -22.896, 0.0]  size [10.389, 14.196, 0.0]
+   from objects: {np.str_('RenderGround'): 970}
+
+TV             F 0.00  P 0.00  R 0.00  pts 0  tol 5 cm
+   target  centre [0.206, -2.533, 0.813]  size [0.892, 0.248, 0.504]
+
+TV_Stand       F 0.00  P 0.00  R 0.00  pts 632  tol 6 cm
+   target  centre [0.206, -2.534, 0.286]  size [1.09, 0.474, 0.548]
+   aligned centre [0.12, -1.617, 0.377]  size [1.528, 0.637, 0.321]
+   raw     centre [26.467, -0.001, 0.0]  size [7.053, 19.157, 0.0]
+   from objects: {np.str_('RenderGround'): 632}
+
+Side_Table     F 0.03  P 0.03  R 0.04  pts 961  tol 4 cm
+   target  centre [-1.096, -1.015, 0.249]  size [0.413, 0.44, 0.477]
+   aligned centre [-0.734, -1.319, 0.19]  size [1.387, 0.908, 0.295]
+   raw     centre [24.679, -11.442, 0.0]  size [10.613, 17.748, 0.0]
+   from objects: {np.str_('RenderGround'): 961}
+
+Coffee_Table   F 0.73  P 0.92  R 0.60  pts 220562  tol 7 cm
+   target  centre [0.785, 0.758, 0.252]  size [0.962, 0.964, 0.463]
+   aligned centre [0.536, 0.482, 0.423]  size [1.503, 2.117, 0.321]
+   raw     centre [0.889, 1.517, 1.022]  size [26.249, 19.331, 2.055]
+   from objects: {np.str_('BookcaseA_back'): 6648, np.str_('BookcaseB_back'): 6648, np.str_('SofaA_base'): 5139, np.str_('SofaB_base'): 4242, np.str_('BookcaseA_bot'): 3000, np.str_('BookcaseA_shelf1'): 3000, np.str_('BookcaseA_shelf2'): 3000, np.str_('BookcaseA_shelf3'): 3000}
+
+Sofa_2         F 0.39  P 0.45  R 0.34  pts 4715  tol 10 cm
+   target  centre [0.815, 2.255, 0.453]  size [1.695, 0.831, 0.886]
+   aligned centre [1.102, 2.157, 0.523]  size [3.834, 1.832, 0.782]
+   raw     centre [-18.624, 6.965, 0.0]  size [22.751, 46.032, 0.0]
+   from objects: {np.str_('RenderGround'): 4715}
+
+Sofa_1         F 0.23  P 0.25  R 0.20  pts 6965  tol 9 cm
+   target  centre [-1.025, -0.028, 0.429]  size [0.888, 1.398, 0.838]
+   aligned centre [-0.904, 0.175, 0.148]  size [2.548, 3.15, 0.533]
+   raw     centre [6.672, -14.08, 0.0]  size [35.891, 31.826, 0.0]
+   from objects: {np.str_('RenderGround'): 6965}
