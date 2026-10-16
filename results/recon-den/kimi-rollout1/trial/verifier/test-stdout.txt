@@ -1,0 +1,10 @@
+[export] scene taken from: live Blender
+{"reward": 0.19866658252375305, "headline_obj_f@5%_nn": 0.19866658252375305, "scene_f@5%": 0.6017674371573274, "scene_precision@5%": 0.7236620119917943, "scene_recall@5%": 0.51501725740077, "scene_f@10%": 0.8606974098454494, "mean_pos_err_m": 0.7175170463021849, "legacy_obj_f@5%_matched": 0.2885999614802483}
+  Low_Cabinet      F=0.02  P=0.02  R=0.06
+  Sideboard        F=0.33  P=0.44  R=0.27
+  Wall_Shelves     F=0.30  P=0.28  R=0.32
+  Tall_Shelf       F=0.41  P=0.40  R=0.43
+  Floor_Lamp       F=0.22  P=0.20  R=0.24
+  TV               F=0.00  P=0.00  R=0.00
+  TV_Stand         F=0.00  P=0.02  R=0.00
+  Coffee_Table     F=0.30  P=0.30  R=0.30
