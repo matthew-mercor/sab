@@ -1,0 +1,13 @@
+{
+  "task": "kids-bedroom",
+  "agent": "glm-cursor",
+  "label": "glm-run1",
+  "harbor": "0.23.0",
+  "run_start": "2026-10-16T20:46:09Z",
+  "agent_cost_usd": null,
+  "agent_input_tokens": 2558707,
+  "agent_output_tokens": 82614,
+  "gateway_credit_used_usd": 4.9046,
+  "note": "gateway_credit_used_usd covers the whole key while this run went (judge calls, agent calls, and any run at the same time).",
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/38964526317"
+}

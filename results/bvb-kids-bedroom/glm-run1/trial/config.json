@@ -1,0 +1,17 @@
+{
+    "task": {
+        "path": "bvb/tasks/bvb-kids-bedroom"
+    },
+    "trial_name": "bvb-kids-bedroom__zvoxQCv",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__20-46-11",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash",
+        "extra_allowed_hosts": [
+            "*.cursor.sh",
+            "cursor.com",
+            "*.cursor.com"
+        ]
+    },
+    "job_id": "6b654316-bdfb-486d-ab83-e977e869291e"
+}

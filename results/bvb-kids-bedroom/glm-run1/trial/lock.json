@@ -1,0 +1,40 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "bvb-kids-bedroom",
+        "type": "local",
+        "digest": "sha256:a30289fd0caa81296e294f811aec7bd9babad1b5908a88ffd2a71021c39a53ff",
+        "path": "bvb/tasks/bvb-kids-bedroom"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [
+            "*.cursor.sh",
+            "cursor.com",
+            "*.cursor.com"
+        ],
+        "kwargs": {},
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    }
+}
