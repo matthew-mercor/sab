@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "runs/recon-sitting-room-golden-fb1"
+    },
+    "trial_name": "recon-sitting-room-golden-fb1__uhtgijs",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__21-29-47",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash"
+    },
+    "job_id": "2e0307a1-d0bb-461e-8387-4c59a64b3cbe"
+}

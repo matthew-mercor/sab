@@ -1,0 +1,82 @@
+{
+ "reward": 0.9959339297408792,
+ "headline_obj_f@5%_nn": 0.9959339297408792,
+ "per_object": [
+  {
+   "part": "Bookcase_2",
+   "n_pred": 17123,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Bookcase_1",
+   "n_pred": 17692,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Cabinet",
+   "n_pred": 18000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Floor_Lamp",
+   "n_pred": 12000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "TV",
+   "n_pred": 14712,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "TV_Stand",
+   "n_pred": 39288,
+   "f@5%": 0.9857235058732412,
+   "precision": 0.9718489106088373,
+   "recall": 1.0
+  },
+  {
+   "part": "Side_Table",
+   "n_pred": 9000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Coffee_Table",
+   "n_pred": 3000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Sofa_2",
+   "n_pred": 36569,
+   "f@5%": 0.9811301696053207,
+   "precision": 0.9996445076430857,
+   "recall": 0.9632891660171473
+  },
+  {
+   "part": "Sofa_1",
+   "n_pred": 24000,
+   "f@5%": 0.9924856219302296,
+   "precision": 0.9850833333333333,
+   "recall": 1.0
+  }
+ ],
+ "scene_f@5%": 1.0,
+ "scene_precision@5%": 1.0,
+ "scene_recall@5%": 1.0,
+ "scene_f@10%": 1.0,
+ "mean_pos_err_m": 0.16663844354439528,
+ "legacy_obj_f@5%_matched": 0.3098082926063956
+}
