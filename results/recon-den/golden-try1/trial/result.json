@@ -1,0 +1,118 @@
+{
+    "id": "44bd1c84-ea40-4837-b29e-6da0d9eca46a",
+    "task_name": "sceneactbench/recon-den",
+    "trial_name": "recon-den__pZSC57n",
+    "trial_uri": "file:///home/runner/work/sab/sab/jobs/2026-10-16__05-47-51/recon-den__pZSC57n",
+    "task_id": {
+        "path": "tasks/recon-den"
+    },
+    "source": null,
+    "task_checksum": "260782ea19790bba36e96f8c276842804c33d6a26810d69a949df1af637f954e",
+    "config": {
+        "task": {
+            "path": "tasks/recon-den",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "recon-den__pZSC57n",
+        "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__05-47-51",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "cursor-cli",
+            "import_path": null,
+            "model_name": "cursor/glm-5p3-flash",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "73b895d0-3380-45e0-9266-9e7c2512003a",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "cursor-cli",
+        "version": "2026.10.14-941492e",
+        "model_info": {
+            "name": "glm-5p3-flash",
+            "provider": "cursor"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 11628973,
+        "n_cache_tokens": 10748352,
+        "n_output_tokens": 347999,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.7571
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-10-16T05:47:51.689708Z",
+    "finished_at": "2026-10-16T06:50:09.400873Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T05:47:51.785059Z",
+        "finished_at": "2026-10-16T05:49:04.723461Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T05:49:04.723520Z",
+        "finished_at": "2026-10-16T05:49:11.170349Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T05:49:11.170496Z",
+        "finished_at": "2026-10-16T06:49:47.585285Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T06:49:55.360962Z",
+        "finished_at": "2026-10-16T06:49:58.633471Z"
+    },
+    "step_results": null
+}

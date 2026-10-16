@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "tasks/recon-den"
+    },
+    "trial_name": "recon-den__pZSC57n",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__05-47-51",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash"
+    },
+    "job_id": "73b895d0-3380-45e0-9266-9e7c2512003a"
+}

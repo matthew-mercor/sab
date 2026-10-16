@@ -1,0 +1,49 @@
+reward 0.757  (no alignment 0.697);  alignment scale x0.96, yaw +2 deg, shift [ 0.04 -0.02  0.  ]
+
+Low_Cabinet    F 0.68  P 0.82  R 0.58  pts 9764  tol 6 cm
+   target  centre [-1.705, 0.004, 0.396]  size [0.362, 0.844, 0.787]
+   aligned centre [-1.78, -0.014, 0.387]  size [0.466, 0.802, 0.806]
+   raw     centre [-1.886, 0.04, 0.41]  size [0.468, 0.82, 0.82]
+   from objects: {np.str_('cabinet_e509ec'): 3764, np.str_('cabinet_7d7a58'): 3000, np.str_('cabinet_f77b03'): 3000}
+
+Sideboard      F 0.78  P 1.00  R 0.64  pts 12426  tol 8 cm
+   target  centre [-0.064, 2.332, 0.325]  size [1.462, 0.412, 0.645]
+   aligned centre [-0.009, 2.343, 0.314]  size [1.241, 0.498, 0.741]
+   raw     centre [0.02, 2.45, 0.377]  size [1.28, 0.482, 0.755]
+   from objects: {np.str_('dresser_12drawer_cdd8b7'): 6426, np.str_('dresser_12drawer_1f6abe'): 3000, np.str_('dresser_12drawer_b15144'): 3000}
+
+Wall_Shelves   F 0.74  P 0.67  R 0.84  pts 6241  tol 9 cm
+   target  centre [1.745, -1.719, 1.695]  size [0.281, 1.494, 0.849]
+   aligned centre [1.737, -1.575, 1.609]  size [0.45, 1.634, 0.881]
+   raw     centre [1.729, -1.695, 1.619]  size [0.442, 1.69, 0.881]
+   from objects: {np.str_('slab_a'): 3000, np.str_('slab_b'): 2934, np.str_('cubby_unit_c1c36d'): 307}
+
+Tall_Shelf     F 0.86  P 0.84  R 0.89  pts 12744  tol 10 cm
+   target  centre [1.685, -1.779, 0.59]  size [0.238, 1.519, 1.173]
+   aligned centre [1.612, -1.635, 0.639]  size [0.431, 1.527, 1.204]
+   raw     centre [1.6, -1.75, 0.61]  size [0.41, 1.58, 1.22]
+   from objects: {np.str_('cubby_unit_c1c36d'): 10255, np.str_('cubby_unit_6254a8'): 2489}
+
+Floor_Lamp     F 0.62  P 0.72  R 0.54  pts 9000  tol 7 cm
+   target  centre [1.554, 1.466, 0.631]  size [0.491, 0.495, 1.261]
+   aligned centre [1.447, 1.433, 0.593]  size [0.478, 0.475, 1.228]
+   raw     centre [1.51, 1.45, 0.636]  size [0.498, 0.494, 1.272]
+   from objects: {np.str_('floor_lamp_057086'): 3000, np.str_('floor_lamp_ce96a1'): 3000, np.str_('floor_lamp_fc4cd9'): 3000}
+
+TV             F 0.70  P 0.62  R 0.80  pts 10591  tol 10 cm
+   target  centre [1.55, 0.155, 1.018]  size [0.34, 1.766, 1.079]
+   aligned centre [1.589, 0.114, 1.016]  size [0.386, 2.048, 1.134]
+   raw     centre [1.605, 0.08, 1.041]  size [0.419, 2.141, 1.159]
+   from objects: {np.str_('tv_6ff649'): 3500, np.str_('tv_662648'): 3058, np.str_('tv_8170e7'): 3000, np.str_('console_b52517'): 956, np.str_('slab_b'): 66, np.str_('cubby_unit_c1c36d'): 11}
+
+TV_Stand       F 0.91  P 0.90  R 0.91  pts 10252  tol 11 cm
+   target  centre [1.55, 0.155, 0.24]  size [0.504, 2.048, 0.473]
+   aligned centre [1.628, 0.065, 0.308]  size [0.459, 2.276, 0.644]
+   raw     centre [1.647, 0.042, 0.31]  size [0.445, 2.355, 0.62]
+   from objects: {np.str_('console_b52517'): 6586, np.str_('console_14f594'): 3000, np.str_('cubby_unit_6254a8'): 511, np.str_('cubby_unit_c1c36d'): 155}
+
+Coffee_Table   F 0.77  P 0.95  R 0.64  pts 7392  tol 8 cm
+   target  centre [0.136, 0.08, 0.22]  size [0.893, 1.383, 0.412]
+   aligned centre [-0.064, 0.129, 0.219]  size [0.704, 1.221, 0.458]
+   raw     centre [-0.1, 0.15, 0.225]  size [0.7, 1.25, 0.45]
+   from objects: {np.str_('coffee_table_1e4adc'): 4392, np.str_('coffee_table_275601'): 3000}
