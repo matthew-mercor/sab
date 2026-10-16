@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "runs/recon-den-golden-fb1"
+    },
+    "trial_name": "recon-den-golden-fb1__kpCy5fG",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__07-01-16",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash"
+    },
+    "job_id": "6494dc4e-2331-4e31-aa2c-85a358102e05"
+}

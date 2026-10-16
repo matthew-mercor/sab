@@ -1,0 +1,49 @@
+reward 0.999  (no alignment 0.998);  alignment scale x1.00, yaw +0 deg, shift [-0.    0.01  0.  ]
+
+Low_Cabinet    F 1.00  P 1.00  R 1.00  pts 66000  tol 6 cm
+   target  centre [-1.705, 0.004, 0.396]  size [0.362, 0.844, 0.787]
+   aligned centre [-1.707, 0.018, 0.404]  size [0.365, 0.847, 0.792]
+   raw     centre [-1.705, 0.004, 0.397]  size [0.363, 0.844, 0.787]
+   from objects: {np.str_('cab_back'): 3000, np.str_('cab_divider'): 3000, np.str_('cab_drawer_0_0'): 3000, np.str_('cab_drawer_0_1'): 3000, np.str_('cab_drawer_0_2'): 3000, np.str_('cab_drawer_1_0'): 3000, np.str_('cab_drawer_1_1'): 3000, np.str_('cab_drawer_1_2'): 3000}
+
+Sideboard      F 1.00  P 1.00  R 1.00  pts 174000  tol 8 cm
+   target  centre [-0.064, 2.332, 0.325]  size [1.462, 0.412, 0.645]
+   aligned centre [-0.068, 2.346, 0.313]  size [1.465, 0.415, 0.652]
+   raw     centre [-0.064, 2.332, 0.326]  size [1.462, 0.412, 0.645]
+   from objects: {np.str_('dr_back'): 3000, np.str_('dr_bar_0_0'): 3000, np.str_('dr_bar_0_1'): 3000, np.str_('dr_bar_0_2'): 3000, np.str_('dr_bar_0_3'): 3000, np.str_('dr_bar_1_0'): 3000, np.str_('dr_bar_1_1'): 3000, np.str_('dr_bar_1_2'): 3000}
+
+Wall_Shelves   F 1.00  P 1.00  R 1.00  pts 6000  tol 9 cm
+   target  centre [1.745, -1.719, 1.695]  size [0.281, 1.494, 0.849]
+   aligned centre [1.748, -1.697, 1.698]  size [0.286, 1.499, 0.857]
+   raw     centre [1.745, -1.719, 1.695]  size [0.282, 1.494, 0.848]
+   from objects: {np.str_('slab_a'): 3000, np.str_('slab_b'): 3000}
+
+Tall_Shelf     F 1.00  P 1.00  R 1.00  pts 51000  tol 10 cm
+   target  centre [1.685, -1.779, 0.59]  size [0.238, 1.519, 1.173]
+   aligned centre [1.684, -1.762, 0.594]  size [0.242, 1.524, 1.181]
+   raw     centre [1.685, -1.779, 0.589]  size [0.238, 1.519, 1.173]
+   from objects: {np.str_('cu_divider_0'): 3000, np.str_('cu_divider_1'): 3000, np.str_('cu_divider_2'): 3000, np.str_('cu_leg_0_0'): 3000, np.str_('cu_leg_0_1'): 3000, np.str_('cu_leg_0_2'): 3000, np.str_('cu_leg_1_0'): 3000, np.str_('cu_leg_1_1'): 3000}
+
+Floor_Lamp     F 1.00  P 1.00  R 0.99  pts 9000  tol 7 cm
+   target  centre [1.554, 1.466, 0.631]  size [0.491, 0.495, 1.261]
+   aligned centre [1.551, 1.485, 0.617]  size [0.497, 0.494, 1.263]
+   raw     centre [1.552, 1.467, 0.63]  size [0.497, 0.494, 1.261]
+   from objects: {np.str_('floor_lamp_column'): 3000, np.str_('floor_lamp_ring'): 3000, np.str_('floor_lamp_shade'): 3000}
+
+TV             F 1.00  P 1.00  R 1.00  pts 14761  tol 10 cm
+   target  centre [1.55, 0.155, 1.018]  size [0.34, 1.766, 1.079]
+   aligned centre [1.549, 0.173, 1.011]  size [0.37, 1.77, 1.09]
+   raw     centre [1.551, 0.155, 1.015]  size [0.37, 1.766, 1.087]
+   from objects: {np.str_('tv_screen'): 3606, np.str_('tv_screen_front'): 3338, np.str_('tv_backbox'): 3000, np.str_('tv_neck'): 2959, np.str_('tv_baseplate'): 1693, np.str_('cs_top'): 165}
+
+TV_Stand       F 1.00  P 1.00  R 1.00  pts 37183  tol 11 cm
+   target  centre [1.55, 0.155, 0.24]  size [0.504, 2.048, 0.473]
+   aligned centre [1.548, 0.169, 0.241]  size [0.507, 2.051, 0.502]
+   raw     centre [1.55, 0.155, 0.25]  size [0.505, 2.048, 0.495]
+   from objects: {np.str_('cs_bottom'): 3000, np.str_('cs_door_n'): 3000, np.str_('cs_door_s'): 3000, np.str_('cs_end_n'): 3000, np.str_('cs_end_s'): 3000, np.str_('cs_handle_n'): 3000, np.str_('cs_handle_s'): 3000, np.str_('cs_wall_0'): 3000}
+
+Coffee_Table   F 1.00  P 1.00  R 1.00  pts 45000  tol 8 cm
+   target  centre [0.136, 0.08, 0.22]  size [0.893, 1.383, 0.412]
+   aligned centre [0.139, 0.094, 0.22]  size [0.906, 1.384, 0.422]
+   raw     centre [0.142, 0.08, 0.219]  size [0.906, 1.383, 0.413]
+   from objects: {np.str_('ct_back'): 3000, np.str_('ct_bottom'): 3000, np.str_('ct_end_n'): 3000, np.str_('ct_end_s'): 3000, np.str_('ct_front_panel'): 3000, np.str_('ct_handle'): 3000, np.str_('ct_leg_0_0'): 3000, np.str_('ct_leg_0_1'): 3000}
