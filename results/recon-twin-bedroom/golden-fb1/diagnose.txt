@@ -1,0 +1,49 @@
+reward 0.999  (no alignment 0.992);  alignment scale x1.00, yaw +1 deg, shift [ 0.04  0.01 -0.01]
+
+Shelving_Unit  F 1.00  P 1.00  R 1.00  pts 24000  tol 13 cm
+   target  centre [0.187, 1.726, 0.896]  size [1.825, 0.366, 1.792]
+   aligned centre [0.213, 1.749, 0.873]  size [1.84, 0.4, 1.805]
+   raw     centre [0.187, 1.727, 0.896]  size [1.826, 0.365, 1.792]
+   from objects: {np.str_('bs_div'): 3000, np.str_('bs_h0'): 3000, np.str_('bs_h1'): 3000, np.str_('bs_h2'): 3000, np.str_('bs_h3'): 3000, np.str_('bs_h4'): 3000, np.str_('bs_sideE'): 3000, np.str_('bs_sideW'): 3000}
+
+Cabinet        F 0.99  P 0.99  R 1.00  pts 30000  tol 7 cm
+   target  centre [-1.702, -1.099, 0.514]  size [0.285, 0.879, 1.008]
+   aligned centre [-1.642, -1.104, 0.519]  size [0.301, 0.889, 1.016]
+   raw     centre [-1.701, -1.1, 0.514]  size [0.285, 0.879, 1.008]
+   from objects: {np.str_('mr_back'): 3000, np.str_('mr_div'): 3000, np.str_('mr_h0'): 3000, np.str_('mr_h1'): 3000, np.str_('mr_h2'): 3000, np.str_('mr_h3'): 3000, np.str_('mr_h4'): 3000, np.str_('mr_h5'): 3000}
+
+Dresser        F 1.00  P 1.00  R 1.00  pts 327000  tol 8 cm
+   target  centre [1.638, 1.122, 0.555]  size [0.381, 1.113, 1.09]
+   aligned centre [1.672, 1.161, 0.528]  size [0.4, 1.125, 1.099]
+   raw     centre [1.639, 1.122, 0.555]  size [0.381, 1.114, 1.09]
+   from objects: {np.str_('cab_back'): 3000, np.str_('cab_h0'): 3000, np.str_('cab_h1'): 3000, np.str_('cab_h2'): 3000, np.str_('cab_h3'): 3000, np.str_('cab_h4'): 3000, np.str_('cab_h5'): 3000, np.str_('cab_h6'): 3000}
+
+Floor_Lamp     F 1.00  P 1.00  R 1.00  pts 9000  tol 9 cm
+   target  centre [-1.713, -1.75, 0.848]  size [0.218, 0.218, 1.682]
+   aligned centre [-1.642, -1.751, 0.858]  size [0.22, 0.221, 1.684]
+   raw     centre [-1.715, -1.752, 0.848]  size [0.22, 0.221, 1.682]
+   from objects: {np.str_('fl_base'): 3000, np.str_('fl_shade'): 3000, np.str_('fl_stem'): 3000}
+
+Nightstand_2   F 1.00  P 1.00  R 1.00  pts 27000  tol 6 cm
+   target  centre [-1.617, 1.681, 0.526]  size [0.371, 0.414, 1.032]
+   aligned centre [-1.594, 1.677, 0.512]  size [0.38, 0.423, 1.035]
+   raw     centre [-1.617, 1.681, 0.526]  size [0.372, 0.414, 1.032]
+   from objects: {np.str_('nsB_back'): 3000, np.str_('nsB_bottom'): 3000, np.str_('nsB_lampbase'): 3000, np.str_('nsB_lampshade'): 3000, np.str_('nsB_lampstem'): 3000, np.str_('nsB_shelf'): 3000, np.str_('nsB_top'): 3000, np.str_('nsB_wallN'): 3000}
+
+Nightstand_1   F 1.00  P 1.00  R 1.00  pts 27004  tol 6 cm
+   target  centre [-1.617, 0.024, 0.526]  size [0.371, 0.414, 1.032]
+   aligned centre [-1.573, 0.043, 0.523]  size [0.38, 0.47, 1.035]
+   raw     centre [-1.617, 0.05, 0.526]  size [0.372, 0.466, 1.032]
+   from objects: {np.str_('nsA_back'): 3000, np.str_('nsA_bottom'): 3000, np.str_('nsA_lampbase'): 3000, np.str_('nsA_lampshade'): 3000, np.str_('nsA_lampstem'): 3000, np.str_('nsA_shelf'): 3000, np.str_('nsA_top'): 3000, np.str_('nsA_wallN'): 3000}
+
+Bed_2          F 1.00  P 0.99  R 1.00  pts 32425  tol 13 cm
+   target  centre [0.762, -1.36, 0.438]  size [2.163, 1.098, 0.856]
+   aligned centre [0.725, -1.37, 0.409]  size [2.237, 1.082, 0.847]
+   raw     centre [0.66, -1.395, 0.42]  size [2.22, 1.05, 0.84]
+   from objects: {np.str_('b2_mattress'): 5425, np.str_('b2_fb'): 3000, np.str_('b2_hb'): 3000, np.str_('b2_leg_0'): 3000, np.str_('b2_leg_1'): 3000, np.str_('b2_leg_2'): 3000, np.str_('b2_leg_3'): 3000, np.str_('b2_pillow'): 3000}
+
+Bed_1          F 1.00  P 1.00  R 1.00  pts 25655  tol 13 cm
+   target  centre [-0.758, 0.833, 0.475]  size [2.089, 1.099, 0.93]
+   aligned centre [-0.724, 0.839, 0.463]  size [2.104, 1.126, 0.948]
+   raw     centre [-0.758, 0.832, 0.475]  size [2.089, 1.099, 0.93]
+   from objects: {np.str_('b1_mattress'): 5469, np.str_('b1_frame'): 5114, np.str_('b1_baseS'): 3040, np.str_('b1_baseN'): 3036, np.str_('b1_pillow'): 3000, np.str_('b1_seam1'): 3000, np.str_('b1_headboard'): 2996}

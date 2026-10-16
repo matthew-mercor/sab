@@ -1,0 +1,68 @@
+{
+ "reward": 0.9988628712193217,
+ "headline_obj_f@5%_nn": 0.9988628712193217,
+ "per_object": [
+  {
+   "part": "Shelving_Unit",
+   "n_pred": 24000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Cabinet",
+   "n_pred": 30000,
+   "f@5%": 0.9947234965482602,
+   "precision": 0.9918,
+   "recall": 0.9976642790407972
+  },
+  {
+   "part": "Dresser",
+   "n_pred": 327000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Floor_Lamp",
+   "n_pred": 9000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Nightstand_2",
+   "n_pred": 27000,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  {
+   "part": "Nightstand_1",
+   "n_pred": 27004,
+   "f@5%": 0.9995368912435396,
+   "precision": 0.9990742112279662,
+   "recall": 1.0
+  },
+  {
+   "part": "Bed_2",
+   "n_pred": 32425,
+   "f@5%": 0.9966425819627744,
+   "precision": 0.993307632999229,
+   "recall": 1.0
+  },
+  {
+   "part": "Bed_1",
+   "n_pred": 25655,
+   "f@5%": 1.0,
+   "precision": 1.0,
+   "recall": 1.0
+  }
+ ],
+ "scene_f@5%": 1.0,
+ "scene_precision@5%": 1.0,
+ "scene_recall@5%": 1.0,
+ "scene_f@10%": 1.0,
+ "mean_pos_err_m": 0.7896417958974724,
+ "legacy_obj_f@5%_matched": 0.35934364632468097
+}

@@ -1,0 +1,12 @@
+{
+  "task": "recon-twin-bedroom",
+  "label": "golden-fb1",
+  "model": "cursor/glm-5p3-flash",
+  "agent": "cursor-cli",
+  "harbor": "0.23.0",
+  "feedback_dir": "feedback/recon-twin-bedroom/fb1",
+  "runner_cpus": "4",
+  "runner_mem_mb": "15989",
+  "harbor_flags": "",
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/38863422274"
+}

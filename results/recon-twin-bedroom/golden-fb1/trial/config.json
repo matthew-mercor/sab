@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "runs/recon-twin-bedroom-golden-fb1"
+    },
+    "trial_name": "recon-twin-bedroom-golden-fb1__Rg9VGMP",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__06-52-24",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash"
+    },
+    "job_id": "74091cb4-907f-411c-8bd1-563cad1837bc"
+}
