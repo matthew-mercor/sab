@@ -1,0 +1,12 @@
+{
+  "task": "recon-den",
+  "label": "kimi-rollout3",
+  "model": "moonshotai/kimi-k3",
+  "agent": "sceneactbench-agent",
+  "harbor": "0.23.0",
+  "feedback_dir": "",
+  "runner_cpus": "4",
+  "runner_mem_mb": "15988",
+  "harbor_flags": "",
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/38866443378"
+}

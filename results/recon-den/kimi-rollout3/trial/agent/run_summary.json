@@ -1,0 +1,17 @@
+{
+ "model": "moonshotai/kimi-k3",
+ "finished": false,
+ "error": "max_steps reached",
+ "num_steps": 35,
+ "elapsed_sec": 1407.2,
+ "reference_images": 6,
+ "max_steps": 35,
+ "usage": {
+  "api_calls_with_usage": 35,
+  "prompt_tokens": 856367,
+  "cached_prompt_tokens": 211200,
+  "completion_tokens": 100006,
+  "reasoning_tokens": 86257,
+  "cost_usd": 3.498951
+ }
+}

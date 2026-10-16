@@ -1,0 +1,15 @@
+{
+    "task": {
+        "path": "tasks/recon-den"
+    },
+    "trial_name": "recon-den__rLzAarN",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__07-20-59",
+    "agent": {
+        "name": "sceneactbench_agent.harbor_agent:SceneActBenchAgent",
+        "model_name": "moonshotai/kimi-k3",
+        "kwargs": {
+            "api_key_env": "AI_GATEWAY_API_KEY"
+        }
+    },
+    "job_id": "73c93a34-b60b-4539-ad11-074fa1c6fc39"
+}
