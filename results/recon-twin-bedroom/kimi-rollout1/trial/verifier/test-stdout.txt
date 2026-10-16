@@ -1,0 +1,10 @@
+[export] scene taken from: live Blender
+{"reward": 0.34805869510500764, "headline_obj_f@5%_nn": 0.34805869510500764, "scene_f@5%": 0.8049968188323436, "scene_precision@5%": 0.9399419513284215, "scene_recall@5%": 0.703934666341182, "scene_f@10%": 0.9562115158636898, "mean_pos_err_m": 0.7782103142218921, "legacy_obj_f@5%_matched": 0.31569942812439566}
+  Shelving_Unit    F=0.61  P=0.80  R=0.50
+  Cabinet          F=0.00  P=0.00  R=0.00
+  Dresser          F=0.56  P=0.91  R=0.40
+  Floor_Lamp       F=0.00  P=0.00  R=0.00
+  Nightstand_2     F=0.31  P=0.23  R=0.48
+  Nightstand_1     F=0.14  P=0.99  R=0.08
+  Bed_2            F=0.41  P=0.50  R=0.34
+  Bed_1            F=0.76  P=0.99  R=0.61
