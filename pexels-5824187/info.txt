@@ -1,0 +1,5 @@
+page: https://www.pexels.com/video/indoor-view-of-a-bedroom-5824187/
+width=2160
+height=3840
+r_frame_rate=24000/1001
+duration=6.846667

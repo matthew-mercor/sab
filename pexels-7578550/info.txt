@@ -1,0 +1,5 @@
+page: https://www.pexels.com/video/luxurious-bedroom-and-bathroom-7578550/
+width=3840
+height=2160
+r_frame_rate=30/1
+duration=16.041667

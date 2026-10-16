@@ -1,0 +1,5 @@
+page: https://www.pexels.com/video/beautiful-bedroom-interior-5515226/
+width=1080
+height=1920
+r_frame_rate=25/1
+duration=16.320000

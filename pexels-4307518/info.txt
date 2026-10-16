@@ -1,0 +1,5 @@
+page: https://www.pexels.com/video/interior-design-of-a-bedroom-4307518/
+width=1920
+height=1080
+r_frame_rate=30000/1001
+duration=7.593333
