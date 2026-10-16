@@ -1,0 +1,40 @@
+reward 0.125  (no alignment 0.017);  alignment scale x0.45, yaw -34 deg, shift [ 0.22 -0.08  0.12]
+
+Shelving_Unit  F 0.00  P 0.00  R 0.00  pts 2608  tol 13 cm
+   target  centre [0.187, 1.726, 0.896]  size [1.825, 0.366, 1.792]
+   aligned centre [0.822, 1.096, 0.447]  size [0.33, 0.279, 0.825]
+   raw     centre [-0.287, 2.8, 0.9]  size [0.625, 0.38, 1.8]
+   from objects: {np.str_('shelf_8add0a'): 1579, np.str_('shelf_643458'): 1029}
+
+Cabinet        F 0.00  P 0.00  R 0.00  pts 0  tol 7 cm
+   target  centre [-1.702, -1.099, 0.514]  size [0.285, 0.879, 1.008]
+
+Dresser        F 0.01  P 0.07  R 0.01  pts 8333  tol 8 cm
+   target  centre [1.638, 1.122, 0.555]  size [0.381, 1.113, 1.09]
+   aligned centre [1.137, 0.84, 0.458]  size [0.582, 0.475, 0.832]
+   raw     centre [0.549, 2.8, 0.9]  size [1.303, 0.38, 1.8]
+   from objects: {np.str_('shelf_8add0a'): 6749, np.str_('shelf_643458'): 1584}
+
+Floor_Lamp     F 0.00  P 0.00  R 0.00  pts 0  tol 9 cm
+   target  centre [-1.713, -1.75, 0.848]  size [0.218, 0.218, 1.682]
+
+Nightstand_2   F 0.08  P 0.24  R 0.05  pts 12000  tol 6 cm
+   target  centre [-1.617, 1.681, 0.526]  size [0.371, 0.414, 1.032]
+   aligned centre [-1.343, 1.747, 0.276]  size [0.286, 0.306, 0.488]
+   raw     centre [-5.105, 1.45, 0.545]  size [0.43, 0.52, 1.06]
+   from objects: {np.str_('nightstand_a_2b971c'): 3000, np.str_('nightstand_a_9ef9cf'): 3000, np.str_('nightstand_a_b7755b'): 3000, np.str_('nightstand_a_ee842b'): 3000}
+
+Nightstand_1   F 0.00  P 0.00  R 0.00  pts 0  tol 6 cm
+   target  centre [-1.617, 0.024, 0.526]  size [0.371, 0.414, 1.032]
+
+Bed_2          F 0.30  P 0.61  R 0.20  pts 30103  tol 13 cm
+   target  centre [0.762, -1.36, 0.438]  size [2.163, 1.098, 0.856]
+   aligned centre [0.857, -1.453, 0.531]  size [2.782, 1.295, 0.716]
+   raw     centre [2.64, -1.423, 0.785]  size [5.78, 2.506, 1.57]
+   from objects: {np.str_('chest_9ddfc3'): 6139, np.str_('dresser_644f52'): 5964, np.str_('chest_ad2dd8'): 3000, np.str_('chest_fd7542'): 3000, np.str_('dresser_032ae7'): 3000, np.str_('dresser_cb9646'): 3000, np.str_('floor_lamp_2ef6cf'): 3000, np.str_('floor_lamp_9ce11b'): 3000}
+
+Bed_1          F 0.61  P 0.93  R 0.45  pts 67746  tol 13 cm
+   target  centre [-0.758, 0.833, 0.475]  size [2.089, 1.099, 0.93]
+   aligned centre [-0.572, 0.872, 0.414]  size [2.879, 1.187, 0.744]
+   raw     centre [-2.675, 0.982, 0.821]  size [5.29, 3.784, 1.641]
+   from objects: {np.str_('bed_light_e0579d'): 18875, np.str_('bed_dark_6b2574'): 11407, np.str_('bed_dark_ca9509'): 6325, np.str_('bed_light_474590'): 6034, np.str_('bed_dark_c0fba1'): 3000, np.str_('bed_dark_f354fd'): 3000, np.str_('bed_light_18f72a'): 3000, np.str_('bed_light_787cfb'): 3000}
