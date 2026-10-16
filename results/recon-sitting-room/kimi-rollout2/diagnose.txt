@@ -1,0 +1,58 @@
+reward 0.188  (no alignment 0.134);  alignment scale x0.08, yaw -5 deg, shift [0.54 0.68 0.41]
+
+Bookcase_2     F 0.19  P 0.30  R 0.14  pts 4923  tol 15 cm
+   target  centre [1.529, 0.976, 1.188]  size [0.378, 1.702, 2.376]
+   aligned centre [2.098, 1.1, 0.636]  size [2.109, 2.352, 0.417]
+   raw     centre [17.541, 7.046, -0.001]  size [24.914, 30.747, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 4923}
+
+Bookcase_1     F 0.10  P 0.17  R 0.08  pts 5282  tol 15 cm
+   target  centre [1.529, -1.122, 1.188]  size [0.378, 1.702, 2.376]
+   aligned centre [1.614, -1.032, 0.731]  size [2.579, 1.918, 0.472]
+   raw     centre [14.86, -18.242, -0.001]  size [30.272, 23.491, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 5282}
+
+Cabinet        F 0.10  P 0.09  R 0.12  pts 3103  tol 5 cm
+   target  centre [-0.533, 2.603, 0.348]  size [0.705, 0.337, 0.676]
+   aligned centre [-0.826, 2.455, 0.019]  size [1.88, 1.786, 0.31]
+   raw     centre [-19.24, 19.477, -0.001]  size [21.516, 21.045, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 3103}
+
+Floor_Lamp     F 0.03  P 0.05  R 0.03  pts 594  tol 8 cm
+   target  centre [-1.623, -1.273, 0.755]  size [0.187, 0.189, 1.497]
+   aligned centre [-1.74, -1.215, 0.215]  size [0.754, 0.783, 0.166]
+   raw     centre [-25.217, -25.574, -0.001]  size [9.532, 8.8, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 594}
+
+TV             F 0.00  P 0.00  R 0.00  pts 0  tol 5 cm
+   target  centre [0.206, -2.533, 0.813]  size [0.892, 0.248, 0.504]
+
+TV_Stand       F 0.00  P 0.00  R 0.00  pts 370  tol 6 cm
+   target  centre [0.206, -2.534, 0.286]  size [1.09, 0.474, 0.548]
+   aligned centre [0.216, -1.576, 0.556]  size [1.146, 0.464, 0.191]
+   raw     centre [-0.899, -27.383, -0.001]  size [14.216, 5.164, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 370}
+
+Side_Table     F 0.01  P 0.01  R 0.02  pts 962  tol 4 cm
+   target  centre [-1.096, -1.015, 0.249]  size [0.413, 0.44, 0.477]
+   aligned centre [-0.738, -1.277, 0.364]  size [1.432, 0.816, 0.256]
+   raw     centre [-13.281, -25.304, -0.001]  size [18.069, 9.389, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 962}
+
+Coffee_Table   F 0.74  P 0.82  R 0.67  pts 240405  tol 7 cm
+   target  centre [0.785, 0.758, 0.252]  size [0.962, 0.964, 0.463]
+   aligned centre [0.54, 0.485, 0.426]  size [1.507, 2.099, 0.345]
+   raw     centre [-0.386, -2.267, 1.045]  size [19.153, 26.056, 2.111]
+   from objects: {np.str_('SofaGray_base'): 5816, np.str_('BookshelfA_back'): 5629, np.str_('BookshelfB_back'): 5629, np.str_('SofaBlue_base'): 4418, np.str_('BookshelfA_bot'): 3000, np.str_('BookshelfA_shelf1'): 3000, np.str_('BookshelfA_shelf2'): 3000, np.str_('BookshelfA_shelf3'): 3000}
+
+Sofa_2         F 0.43  P 0.43  R 0.42  pts 5583  tol 10 cm
+   target  centre [0.815, 2.255, 0.453]  size [1.695, 0.831, 0.886]
+   aligned centre [1.196, 2.211, 0.413]  size [4.011, 1.937, 0.567]
+   raw     centre [6.115, 17.997, -0.001]  size [47.765, 23.998, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 5583}
+
+Sofa_1         F 0.27  P 0.31  R 0.25  pts 6270  tol 9 cm
+   target  centre [-1.025, -0.028, 0.429]  size [0.888, 1.398, 0.838]
+   aligned centre [-0.841, 0.157, 0.25]  size [2.414, 3.134, 0.561]
+   raw     centre [-15.083, -7.922, -0.001]  size [29.826, 36.068, 0.0]
+   from objects: {np.str_('__TMP_ground2'): 6270}

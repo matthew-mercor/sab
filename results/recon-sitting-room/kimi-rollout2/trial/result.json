@@ -1,0 +1,124 @@
+{
+    "id": "0aa2accc-aa85-47bd-8a3b-d899bd924c09",
+    "task_name": "sceneactbench/recon-sitting-room",
+    "trial_name": "recon-sitting-room__hhnseiY",
+    "trial_uri": "file:///home/runner/work/sab/sab/jobs/2026-10-16__21-42-50/recon-sitting-room__hhnseiY",
+    "task_id": {
+        "path": "tasks/recon-sitting-room"
+    },
+    "source": null,
+    "task_checksum": "4be627ceaaf6fb9b0943085e0d1041d2e28a032fc05625ffe7381a0ac1251a82",
+    "config": {
+        "task": {
+            "path": "tasks/recon-sitting-room",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "recon-sitting-room__hhnseiY",
+        "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__21-42-50",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "sceneactbench_agent.harbor_agent:SceneActBenchAgent",
+            "import_path": null,
+            "model_name": "moonshotai/kimi-k3",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "api_key_env": "AI_GATEWAY_API_KEY"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "02754f9a-9571-4e90-95e5-ec500de531f9",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "sceneactbench-agent",
+        "version": "1.0.0",
+        "model_info": {
+            "name": "kimi-k3",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1083750,
+        "n_cache_tokens": 277440,
+        "n_output_tokens": 68653,
+        "cost_usd": 3.531957,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": {
+            "finished": false,
+            "error": "max_steps reached",
+            "num_steps": 35
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.1881
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-10-16T21:42:51.776314Z",
+    "finished_at": "2026-10-16T22:09:32.047087Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T21:42:51.854651Z",
+        "finished_at": "2026-10-16T21:44:05.617653Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T21:44:05.617703Z",
+        "finished_at": "2026-10-16T21:44:06.816684Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T21:44:06.816793Z",
+        "finished_at": "2026-10-16T22:09:15.541791Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T22:09:15.940446Z",
+        "finished_at": "2026-10-16T22:09:21.449069Z"
+    },
+    "step_results": null
+}
