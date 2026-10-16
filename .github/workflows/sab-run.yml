@@ -17,6 +17,7 @@ on:
         options:
           - recon-twin-bedroom
           - recon-den
+          - recon-sitting-room
       label:
         description: Name of this run (for example rollout1 or golden-fb1). Letters, digits, '.', '_' and '-' only.
         required: true
