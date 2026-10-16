@@ -1,0 +1,370 @@
+{
+  "reward": 0.46153846153846156,
+  "kept": 6,
+  "counted": 13,
+  "judge_model": "alibaba/qwen3-vl-instruct",
+  "judge_base_url": "https://ai-gateway.vercel.sh/v1",
+  "votes": 5,
+  "n_frames": 16,
+  "scene": {
+    "has_camera": true,
+    "camera_animated": true,
+    "meshes": 120,
+    "lights": 9,
+    "frame_start": 1,
+    "frame_end": 481
+  },
+  "questions": [
+    {
+      "id": "952001",
+      "question": "In the first frames, on which side of the image is the bed's headboard wall: A. left side, B. right side, C. straight ahead, or D. no bed visible?",
+      "ground_truth": "B",
+      "options": [
+        "A. left side",
+        "B. right side",
+        "C. straight ahead",
+        "D. no bed visible"
+      ],
+      "source_answers": [
+        "B. right side",
+        "B. right side",
+        "B",
+        "B. right side",
+        "B. right side"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. right side",
+        "B. right side",
+        "B",
+        "B. right side",
+        "B"
+      ],
+      "kept": true
+    },
+    {
+      "id": "952020",
+      "question": "In the first frames, where are the big glass doors to the balcony: A. right half, B. left half, C. behind the camera, or D. no glass doors?",
+      "ground_truth": "B",
+      "options": [
+        "A. right half",
+        "B. left half",
+        "C. behind the camera",
+        "D. no glass doors"
+      ],
+      "source_answers": [
+        "B. left half",
+        "B. left half",
+        "B. left half",
+        "B. left half",
+        "B. left half"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. left half",
+        "B",
+        "A",
+        "B",
+        "B. left half"
+      ],
+      "kept": true
+    },
+    {
+      "id": "952008",
+      "question": "What does the bed's headboard look like: A. tall tufted fabric, B. low upholstered, C. dark wood panel, or D. no bed visible?",
+      "ground_truth": "A",
+      "options": [
+        "A. tall tufted fabric",
+        "B. low upholstered",
+        "C. dark wood panel",
+        "D. no bed visible"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B",
+        "B. low upholstered",
+        "B",
+        "B. low upholstered",
+        "B"
+      ],
+      "kept": false
+    },
+    {
+      "id": "952002",
+      "question": "In the bedroom, how does the camera move: A. turns left, B. stays still, C. turns right, or D. rises upward?",
+      "ground_truth": "C",
+      "options": [
+        "A. turns left",
+        "B. stays still",
+        "C. turns right",
+        "D. rises upward"
+      ],
+      "source_answers": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kept": true
+    },
+    {
+      "id": "952011",
+      "question": "How many outdoor chairs are on the balcony: A. one, B. three, C. two, or D. no balcony?",
+      "ground_truth": "C",
+      "options": [
+        "A. one",
+        "B. three",
+        "C. two",
+        "D. no balcony"
+      ],
+      "source_answers": [
+        "C. two",
+        "C. two",
+        "C. two",
+        "C. two",
+        "C. two"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D. no balcony"
+      ],
+      "kept": false
+    },
+    {
+      "id": "950009",
+      "question": "What kind of bathtub is in the bathroom: A. freestanding oval tub, B. built-in tiled tub, C. clawfoot metal tub, or D. no bathtub?",
+      "ground_truth": "A",
+      "options": [
+        "A. freestanding oval tub",
+        "B. built-in tiled tub",
+        "C. clawfoot metal tub",
+        "D. no bathtub"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "D"
+      ],
+      "kept": true
+    },
+    {
+      "id": "950021",
+      "question": "What does the tub's faucet look like: A. tall floor-mounted spout, B. wall tap above tub, C. no faucet visible, or D. faucet on tub rim?",
+      "ground_truth": "A",
+      "options": [
+        "A. tall floor-mounted spout",
+        "B. wall tap above tub",
+        "C. no faucet visible",
+        "D. faucet on tub rim"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C",
+        "C. no faucet visible",
+        "C. no faucet visible",
+        "C",
+        "C"
+      ],
+      "kept": false
+    },
+    {
+      "id": "950012",
+      "question": "Looking toward the bathtub, on which side is the long vanity with the sinks: A. right side, B. left side, C. behind the tub, or D. there is none?",
+      "ground_truth": "B",
+      "options": [
+        "A. right side",
+        "B. left side",
+        "C. behind the tub",
+        "D. there is none"
+      ],
+      "source_answers": [
+        "B. left side",
+        "B. left side",
+        "B. left side",
+        "B. left side",
+        "B. left side"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A. right side",
+        "A. right side",
+        "A. right side"
+      ],
+      "kept": false
+    },
+    {
+      "id": "952018",
+      "question": "In the bathroom, on which side of the image is the large wall mirror: A. straight ahead, B. right side, C. left side, or D. no mirror?",
+      "ground_truth": "C",
+      "options": [
+        "A. straight ahead",
+        "B. right side",
+        "C. left side",
+        "D. no mirror"
+      ],
+      "source_answers": [
+        "C. left side",
+        "C. left side",
+        "C. left side",
+        "C. left side",
+        "C. left side"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A. straight ahead",
+        "A. straight ahead",
+        "A. straight ahead",
+        "A. straight ahead",
+        "A. straight ahead"
+      ],
+      "kept": false
+    },
+    {
+      "id": "952022",
+      "question": "Seen from the vanity side, where is the glass shower relative to the bathtub: A. left of the tub, B. behind the tub, C. no shower, or D. right of the tub?",
+      "ground_truth": "D",
+      "options": [
+        "A. left of the tub",
+        "B. behind the tub",
+        "C. no shower",
+        "D. right of the tub"
+      ],
+      "source_answers": [
+        "D. right of the tub",
+        "D. right of the tub",
+        "D. right of the tub",
+        "D. right of the tub",
+        "D. right of the tub"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": false
+    },
+    {
+      "id": "952010",
+      "question": "What kind of shower is in the bathroom: A. curtain on rail, B. glass box, metal hinges, C. no shower visible, or D. open tiled walk-in?",
+      "ground_truth": "B",
+      "options": [
+        "A. curtain on rail",
+        "B. glass box, metal hinges",
+        "C. no shower visible",
+        "D. open tiled walk-in"
+      ],
+      "source_answers": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "kept": true
+    },
+    {
+      "id": "952013",
+      "question": "What is on the left wall of the bedroom in the first frames: A. window, B. wooden door, C. no bedroom shown, or D. TV screen?",
+      "ground_truth": "A",
+      "options": [
+        "A. window",
+        "B. wooden door",
+        "C. no bedroom shown",
+        "D. TV screen"
+      ],
+      "source_answers": [
+        "A. window",
+        "A. window",
+        "A. window",
+        "A. window",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C. no bedroom shown",
+        "C. no bedroom shown",
+        "C. no bedroom shown",
+        "C. no bedroom shown",
+        "C. no bedroom shown"
+      ],
+      "kept": false
+    },
+    {
+      "id": "951011",
+      "question": "In which room does the video end: A. walk-in closet, B. bedroom, C. hallway, or D. bathroom?",
+      "ground_truth": "D",
+      "options": [
+        "A. walk-in closet",
+        "B. bedroom",
+        "C. hallway",
+        "D. bathroom"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": true
+    }
+  ]
+}

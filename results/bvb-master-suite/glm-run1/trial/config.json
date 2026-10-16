@@ -1,0 +1,17 @@
+{
+    "task": {
+        "path": "bvb/tasks/bvb-master-suite"
+    },
+    "trial_name": "bvb-master-suite__RWF2tTe",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__16-25-08",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash",
+        "extra_allowed_hosts": [
+            "*.cursor.sh",
+            "cursor.com",
+            "*.cursor.com"
+        ]
+    },
+    "job_id": "a4341823-6d93-4376-b20a-bcdf11e0a869"
+}
