@@ -1,0 +1,102 @@
+name: Vercel gateway check
+
+# Shows the Vercel AI Gateway credit balance and use for the key in AI_GATEWAY_API_KEY.
+# With vision_test on, it also checks that the model can see an image sent the same way
+# the SceneActBench agent sends the reference images.
+
+on:
+  workflow_dispatch:
+    inputs:
+      vision_test:
+        description: Also check that the model can see an image
+        required: false
+        type: boolean
+        default: true
+      model:
+        description: Model for the vision check
+        required: false
+        type: string
+        default: moonshotai/kimi-k3
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      MODEL: ${{ inputs.model }}
+    steps:
+      - name: Check the key format
+        run: |
+          if [ -z "$AI_GATEWAY_API_KEY" ]; then echo "::error::Add the repository secret AI_GATEWAY_API_KEY"; exit 1; fi
+          # Shows only yes/no facts about the key, never the key.
+          python3 - <<'EOF'
+          import os
+          k = os.environ["AI_GATEWAY_API_KEY"]
+          s = k.strip().strip('"').strip("'")
+          print("has spaces or line breaks:", k != k.strip() or any(c.isspace() for c in k.strip()))
+          print("has quotes:", any(q in k for q in "\"'"))
+          print("starts with 'Bearer':", s.lower().startswith("bearer"))
+          print("starts with vck_ (AI Gateway key):", s.startswith("vck_"))
+          print("starts with eyJ (short-lived Vercel OIDC token, expires in hours):", s.startswith("eyJ"))
+          EOF
+
+      - name: Credits
+        run: |
+          curl -sS -m 30 -H "Authorization: Bearer $AI_GATEWAY_API_KEY" https://ai-gateway.vercel.sh/v1/credits -o credits.json -w "HTTP %{http_code}\n"
+          cat credits.json; echo
+          python3 - <<'EOF' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          try:
+              d = json.load(open("credits.json"))
+              print(f"**Vercel AI Gateway:** balance {d.get('balance')} USD, total used {d.get('total_used')} USD")
+          except Exception as e:
+              print(f"Could not read the credits: {e}")
+          EOF
+
+      - uses: actions/setup-python@v5
+        if: ${{ inputs.vision_test }}
+        with:
+          python-version: "3.12"
+
+      - name: Vision check
+        if: ${{ inputs.vision_test }}
+        run: |
+          python -m pip install -q pillow "openai>=1.40"
+          python - <<'EOF'
+          import base64, io, os
+          from PIL import Image, ImageDraw, ImageFont
+          from openai import OpenAI
+          im = Image.new("RGB", (768, 768), "white")
+          d = ImageDraw.Draw(im)
+          d.ellipse((60, 60, 340, 340), fill=(220, 30, 30))
+          d.rectangle((430, 430, 710, 710), fill=(30, 60, 220))
+          try:
+              f = ImageFont.truetype("DejaVuSans-Bold.ttf", 120)
+          except OSError:
+              f = ImageFont.load_default()
+          d.text((80, 520), "742", fill="black", font=f)
+          buf = io.BytesIO(); im.save(buf, "PNG")
+          b64 = base64.b64encode(buf.getvalue()).decode()
+          client = OpenAI(api_key=os.environ["AI_GATEWAY_API_KEY"], base_url="https://ai-gateway.vercel.sh/v1", timeout=600)
+          prompt = ("Describe exactly the shapes, their colours and positions, and any text in this image. "
+                    "Do not guess. If you cannot see the image content, say so plainly.")
+          text, usage = [], None
+          for chunk in client.chat.completions.create(
+                  model=os.environ["MODEL"], max_tokens=16000, stream=True,
+                  stream_options={"include_usage": True},
+                  messages=[{"role": "user", "content": [
+                      {"type": "text", "text": prompt},
+                      {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}}]}]):
+              if chunk.choices and chunk.choices[0].delta.content:
+                  text.append(chunk.choices[0].delta.content)
+              if getattr(chunk, "usage", None):
+                  usage = chunk.usage
+          answer = "".join(text)
+          print(f"=== {os.environ['MODEL']} answer ===\n{answer}\n=== usage ===\n{usage}")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as s:
+              s.write(f"\n### {os.environ['MODEL']} answer\n\n{answer}\n\nusage: {usage}\n")
+          EOF
