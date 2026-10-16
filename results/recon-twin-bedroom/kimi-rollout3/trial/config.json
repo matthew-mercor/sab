@@ -1,0 +1,15 @@
+{
+    "task": {
+        "path": "tasks/recon-twin-bedroom"
+    },
+    "trial_name": "recon-twin-bedroom__S2GoT2o",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__07-11-48",
+    "agent": {
+        "name": "sceneactbench_agent.harbor_agent:SceneActBenchAgent",
+        "model_name": "moonshotai/kimi-k3",
+        "kwargs": {
+            "api_key_env": "AI_GATEWAY_API_KEY"
+        }
+    },
+    "job_id": "85909e9b-e43e-4082-b91d-949b4dea9bf0"
+}

@@ -1,0 +1,3 @@
+Skipping image OS validation for hb__9685239075c2510888866a3c42eec50e: docker inspect returned 1
+reference images attached: 6
+Collecting main service artifacts
