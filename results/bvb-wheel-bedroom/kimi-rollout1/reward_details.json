@@ -1,0 +1,424 @@
+{
+  "reward": 0.8,
+  "kept": 12,
+  "counted": 15,
+  "judge_model": "alibaba/qwen3-vl-instruct",
+  "judge_base_url": "https://ai-gateway.vercel.sh/v1",
+  "votes": 5,
+  "n_frames": 16,
+  "scene": {
+    "has_camera": true,
+    "camera_animated": true,
+    "meshes": 117,
+    "lights": 3,
+    "frame_start": 1,
+    "frame_end": 421
+  },
+  "questions": [
+    {
+      "id": "970033",
+      "question": "At the very start, what is in the lower left corner: A. green rug, B. yellow bed corner, C. dog bed, or D. bare floor?",
+      "ground_truth": "B",
+      "options": [
+        "A. green rug",
+        "B. yellow bed corner",
+        "C. dog bed",
+        "D. bare floor"
+      ],
+      "source_answers": [
+        "B. yellow bed corner",
+        "B. yellow bed corner",
+        "B. yellow bed corner",
+        "B. yellow bed corner",
+        "B"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B. yellow bed corner",
+        "B",
+        "B. yellow bed corner",
+        "B. yellow bed corner",
+        "B. yellow bed corner"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970006",
+      "question": "At the very start, what is right of the dresser: A. bookcase, B. no dresser, C. wooden door, or D. tall window?",
+      "ground_truth": "D",
+      "options": [
+        "A. bookcase",
+        "B. no dresser",
+        "C. wooden door",
+        "D. tall window"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970018",
+      "question": "What color is the window sill at the very start: A. white, B. black, C. red, or D. no window?",
+      "ground_truth": "C",
+      "options": [
+        "A. white",
+        "B. black",
+        "C. red",
+        "D. no window"
+      ],
+      "source_answers": [
+        "C",
+        "C",
+        "C",
+        "C. red",
+        "C"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970052",
+      "question": "At the very end, where are the black picture frames relative to the mirror strip: A. below it, B. above it, C. left of it, or D. no mirror?",
+      "ground_truth": "B",
+      "options": [
+        "A. below it",
+        "B. above it",
+        "C. left of it",
+        "D. no mirror"
+      ],
+      "source_answers": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970003",
+      "question": "What hangs on a chain above the dresser: A. iron bar, B. wooden shelf, C. no dresser, or D. TV screen?",
+      "ground_truth": "A",
+      "options": [
+        "A. iron bar",
+        "B. wooden shelf",
+        "C. no dresser",
+        "D. TV screen"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970038",
+      "question": "What color is the bar hanging on the chain above the dresser: A. white, B. gold, C. no dresser, or D. black?",
+      "ground_truth": "D",
+      "options": [
+        "A. white",
+        "B. gold",
+        "C. no dresser",
+        "D. black"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970043",
+      "question": "Where is the cream pillow relative to the dresser: A. right of it, B. on top of it, C. left of it, or D. no dresser?",
+      "ground_truth": "C",
+      "options": [
+        "A. right of it",
+        "B. on top of it",
+        "C. left of it",
+        "D. no dresser"
+      ],
+      "source_answers": [
+        "C. left of it",
+        "C. left of it",
+        "C. left of it",
+        "C. left of it",
+        "C. left of it"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C. left of it",
+        "C. left of it",
+        "C. left of it",
+        "C. left of it",
+        "C. left of it"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970028",
+      "question": "Where is the wagon wheel relative to the dresser: A. right of it, B. left of it, C. above it, or D. no wheel?",
+      "ground_truth": "B",
+      "options": [
+        "A. right of it",
+        "B. left of it",
+        "C. above it",
+        "D. no wheel"
+      ],
+      "source_answers": [
+        "B",
+        "B",
+        "B. left of it",
+        "B. left of it",
+        "B. left of it"
+      ],
+      "counted": true,
+      "render_answers": [
+        "B",
+        "B",
+        "B",
+        "B. left of it",
+        "B"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970001",
+      "question": "What large round object hangs on the white brick wall: A. wagon wheel, B. no brick wall, C. round mirror, or D. wall clock?",
+      "ground_truth": "A",
+      "options": [
+        "A. wagon wheel",
+        "B. no brick wall",
+        "C. round mirror",
+        "D. wall clock"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970020",
+      "question": "What color is the bedspread: A. dark red, B. no bed, C. navy blue, or D. mustard yellow?",
+      "ground_truth": "D",
+      "options": [
+        "A. dark red",
+        "B. no bed",
+        "C. navy blue",
+        "D. mustard yellow"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970009",
+      "question": "What does the headboard look like: A. metal bars, B. tufted fabric, C. wood panels, mint inserts, or D. no headboard?",
+      "ground_truth": "C",
+      "options": [
+        "A. metal bars",
+        "B. tufted fabric",
+        "C. wood panels, mint inserts",
+        "D. no headboard"
+      ],
+      "source_answers": [
+        "C. wood panels, mint inserts",
+        "C. wood panels, mint inserts",
+        "C. wood panels, mint inserts",
+        "C. wood panels, mint inserts",
+        "C. wood panels, mint inserts"
+      ],
+      "counted": true,
+      "render_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "kept": false
+    },
+    {
+      "id": "970010",
+      "question": "At the very end, what is mounted above the headboard: A. TV screen, B. wall lamp, C. clock, or D. no headboard?",
+      "ground_truth": "B",
+      "options": [
+        "A. TV screen",
+        "B. wall lamp",
+        "C. clock",
+        "D. no headboard"
+      ],
+      "source_answers": [
+        "B. wall lamp",
+        "B",
+        "B. wall lamp",
+        "B. wall lamp",
+        "B"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": false
+    },
+    {
+      "id": "970021",
+      "question": "At the very end, what shows in the long strip above the headboard: A. reflection of the wheel, B. blue sky, C. row of books, or D. no headboard?",
+      "ground_truth": "A",
+      "options": [
+        "A. reflection of the wheel",
+        "B. blue sky",
+        "C. row of books",
+        "D. no headboard"
+      ],
+      "source_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": true
+    },
+    {
+      "id": "970048",
+      "question": "Where is the wall lamp relative to the wagon wheel at the very end: A. above it, B. no wheel, C. right of it, or D. left of it?",
+      "ground_truth": "D",
+      "options": [
+        "A. above it",
+        "B. no wheel",
+        "C. right of it",
+        "D. left of it"
+      ],
+      "source_answers": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "counted": true,
+      "render_answers": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "kept": false
+    },
+    {
+      "id": "970016",
+      "question": "At the very end, what runs along the top edge of the image: A. nothing, B. ceiling beams, C. black picture frames, or D. curtains?",
+      "ground_truth": "C",
+      "options": [
+        "A. nothing",
+        "B. ceiling beams",
+        "C. black picture frames",
+        "D. curtains"
+      ],
+      "source_answers": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "counted": true,
+      "render_answers": [
+        "C",
+        "C",
+        "B",
+        "C",
+        "C"
+      ],
+      "kept": true
+    }
+  ]
+}
