@@ -1,0 +1,41 @@
+2026-10-17T00:43:54.475Z INFO  llm config  turnStep=0.1 provider=openai model=moonshotai/kimi-k3 modelAlias=__kimi_env_model__ thinkingEffort=high systemPromptChars=8254 toolCount=29
+2026-10-17T00:43:54.476Z INFO  llm request  turnStep=0.1
+2026-10-17T00:44:16.108Z INFO  llm response  turnStep=0.1 ttftMs=16337 streamDurationMs=5292 outputTokens=240 requestBuildMs=4 serverFirstTokenMs=16333 serverDecodeMs=5291 clientConsumeMs=1 clientBlockedMs=139
+2026-10-17T00:44:16.590Z INFO  llm request  turnStep=0.2
+2026-10-17T00:44:36.818Z INFO  llm response  turnStep=0.2 ttftMs=14204 streamDurationMs=6022 outputTokens=196 requestBuildMs=3 serverFirstTokenMs=14201 serverDecodeMs=6022 clientConsumeMs=0 clientBlockedMs=48
+2026-10-17T00:44:37.397Z INFO  llm request  turnStep=0.3
+2026-10-17T00:44:52.190Z INFO  llm response  turnStep=0.3 ttftMs=9474 streamDurationMs=5317 outputTokens=303 requestBuildMs=5 serverFirstTokenMs=9469 serverDecodeMs=5316 clientConsumeMs=1 clientBlockedMs=52
+2026-10-17T00:44:52.624Z INFO  llm request  turnStep=0.4
+2026-10-17T00:45:10.291Z INFO  llm response  turnStep=0.4 ttftMs=11298 streamDurationMs=6368 outputTokens=227 requestBuildMs=2 serverFirstTokenMs=11296 serverDecodeMs=6368 clientConsumeMs=0 clientBlockedMs=216
+2026-10-17T00:45:10.730Z INFO  llm request  turnStep=0.5
+2026-10-17T00:45:21.050Z INFO  llm response  turnStep=0.5 ttftMs=6702 streamDurationMs=3617 outputTokens=170 requestBuildMs=2 serverFirstTokenMs=6700 serverDecodeMs=3616 clientConsumeMs=1 clientBlockedMs=173
+2026-10-17T00:45:21.272Z INFO  llm request  turnStep=0.6
+2026-10-17T00:47:10.422Z INFO  llm response  turnStep=0.6 ttftMs=8178 streamDurationMs=100970 outputTokens=4186 requestBuildMs=2 serverFirstTokenMs=8176 serverDecodeMs=100964 clientConsumeMs=6 clientBlockedMs=1301
+2026-10-17T00:47:10.999Z INFO  llm request  turnStep=0.7
+2026-10-17T00:47:32.472Z INFO  llm response  turnStep=0.7 ttftMs=14447 streamDurationMs=7024 outputTokens=286 requestBuildMs=1 serverFirstTokenMs=14446 serverDecodeMs=7024 clientConsumeMs=0 clientBlockedMs=55
+2026-10-17T00:47:32.908Z INFO  llm request  turnStep=0.8
+2026-10-17T00:48:32.770Z INFO  llm response  turnStep=0.8 ttftMs=10035 streamDurationMs=49825 outputTokens=1283 requestBuildMs=1 serverFirstTokenMs=10034 serverDecodeMs=49821 clientConsumeMs=4 clientBlockedMs=550
+2026-10-17T00:48:33.249Z INFO  llm request  turnStep=0.9
+2026-10-17T01:01:38.676Z WARN  llm request failed  turnStep=0.9 model=__kimi_env_model__ errorName=ChatProviderError errorMessage="Error: Stream exceeded maximum duration before function timeout"
+2026-10-17T01:01:39.204Z INFO  llm request  turnStep=0.10
+2026-10-17T01:02:45.084Z INFO  llm response  turnStep=0.10 ttftMs=10461 streamDurationMs=55416 outputTokens=1423 requestBuildMs=1 serverFirstTokenMs=10460 serverDecodeMs=55411 clientConsumeMs=5 clientBlockedMs=743
+2026-10-17T01:02:45.462Z INFO  llm request  turnStep=0.11
+2026-10-17T01:15:50.907Z WARN  llm request failed  turnStep=0.11 model=__kimi_env_model__ errorName=ChatProviderError errorMessage="Error: Stream exceeded maximum duration before function timeout"
+2026-10-17T01:15:51.534Z INFO  llm request  turnStep=0.12
+2026-10-17T01:23:15.441Z INFO  llm response  turnStep=0.12 ttftMs=12751 streamDurationMs=431154 outputTokens=12624 requestBuildMs=1 serverFirstTokenMs=12750 serverDecodeMs=431145 clientConsumeMs=9 clientBlockedMs=3581
+2026-10-17T01:23:15.656Z INFO  llm request  turnStep=0.13
+2026-10-17T01:23:29.648Z INFO  llm response  turnStep=0.13 ttftMs=13990 streamDurationMs=0 outputTokens=138 requestBuildMs=1 serverFirstTokenMs=13989 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=1
+2026-10-17T01:23:29.663Z INFO  llm request  turnStep=0.14
+2026-10-17T01:24:21.401Z INFO  llm response  turnStep=0.14 ttftMs=8847 streamDurationMs=42889 outputTokens=1093 requestBuildMs=0 serverFirstTokenMs=8847 serverDecodeMs=42887 clientConsumeMs=2 clientBlockedMs=398
+2026-10-17T01:24:21.540Z INFO  llm request  turnStep=0.15
+2026-10-17T01:24:38.928Z INFO  llm response  turnStep=0.15 ttftMs=17387 streamDurationMs=0 outputTokens=97 requestBuildMs=1 serverFirstTokenMs=17386 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=0
+2026-10-17T01:24:38.937Z INFO  llm request  turnStep=0.16
+2026-10-17T01:37:44.846Z WARN  llm request failed  turnStep=0.16 model=__kimi_env_model__ errorName=ChatProviderError errorMessage="Error: Stream exceeded maximum duration before function timeout"
+2026-10-17T01:37:45.473Z INFO  llm request  turnStep=0.17
+2026-10-17T01:39:17.001Z INFO  llm response  turnStep=0.17 ttftMs=22960 streamDurationMs=68566 outputTokens=7591 requestBuildMs=1 serverFirstTokenMs=22959 serverDecodeMs=68566 clientConsumeMs=0 clientBlockedMs=403
+2026-10-17T01:39:17.018Z INFO  llm request  turnStep=0.18
+2026-10-17T01:39:32.392Z INFO  llm response  turnStep=0.18 ttftMs=15372 streamDurationMs=0 outputTokens=85 requestBuildMs=0 serverFirstTokenMs=15372 serverDecodeMs=0 clientConsumeMs=0 clientBlockedMs=0
+2026-10-17T01:39:33.389Z INFO  llm request  turnStep=0.19
+2026-10-17T01:39:54.010Z INFO  llm response  turnStep=0.19 ttftMs=12564 streamDurationMs=8056 outputTokens=211 requestBuildMs=0 serverFirstTokenMs=12564 serverDecodeMs=8056 clientConsumeMs=0 clientBlockedMs=53
+2026-10-17T01:39:54.021Z INFO  llm request  turnStep=0.20
+2026-10-17T01:40:16.712Z INFO  llm response  turnStep=0.20 ttftMs=22677 streamDurationMs=12 outputTokens=95 requestBuildMs=0 serverFirstTokenMs=22677 serverDecodeMs=12 clientConsumeMs=0 clientBlockedMs=1

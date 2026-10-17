@@ -1,0 +1,13 @@
+{
+  "task": "wheel-bedroom",
+  "agent": "kimi-k3",
+  "label": "kimi-rollout2",
+  "harbor": "0.23.0",
+  "run_start": "2026-10-17T00:42:16Z",
+  "agent_cost_usd": null,
+  "agent_input_tokens": null,
+  "agent_output_tokens": null,
+  "gateway_credit_used_usd": 6.0848,
+  "note": "gateway_credit_used_usd covers the whole key while this run went (judge calls, agent calls, and any run at the same time).",
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/38987538413"
+}
