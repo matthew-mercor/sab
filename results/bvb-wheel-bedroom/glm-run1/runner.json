@@ -1,0 +1,13 @@
+{
+  "task": "wheel-bedroom",
+  "agent": "glm-cursor",
+  "label": "glm-run1",
+  "harbor": "0.23.0",
+  "run_start": "2026-10-16T23:16:10Z",
+  "agent_cost_usd": null,
+  "agent_input_tokens": 6267253,
+  "agent_output_tokens": 62009,
+  "gateway_credit_used_usd": 9.1716,
+  "note": "gateway_credit_used_usd covers the whole key while this run went (judge calls, agent calls, and any run at the same time).",
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/38980454201"
+}

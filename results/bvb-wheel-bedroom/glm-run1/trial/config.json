@@ -1,0 +1,17 @@
+{
+    "task": {
+        "path": "bvb/tasks/bvb-wheel-bedroom"
+    },
+    "trial_name": "bvb-wheel-bedroom__CBmA2gh",
+    "trials_dir": "/home/runner/work/sab/sab/jobs/2026-10-16__23-16-12",
+    "agent": {
+        "name": "cursor-cli",
+        "model_name": "cursor/glm-5p3-flash",
+        "extra_allowed_hosts": [
+            "*.cursor.sh",
+            "cursor.com",
+            "*.cursor.com"
+        ]
+    },
+    "job_id": "ae06c911-99db-4cdd-b01c-397267ed2c24"
+}
