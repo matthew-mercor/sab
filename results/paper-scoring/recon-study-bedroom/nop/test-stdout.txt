@@ -1,0 +1,9 @@
+[export] live Blender: ConnectionRefusedError(111, 'Connection refused')
+[export] no scene found (no meshes in Blender and no saved scene)
+{"reward": 0.0, "metric": "obj_f@5%_matched (SceneActBench primary F@5%)", "error": "FileNotFoundError('no agent scene to score')"}
+  TV_Stand         F=0.00  P=0.00  R=0.00  UNMATCHED
+  Side_Table       F=0.00  P=0.00  R=0.00  UNMATCHED
+  Sofa             F=0.00  P=0.00  R=0.00  UNMATCHED
+  Desk_Chair       F=0.00  P=0.00  R=0.00  UNMATCHED
+  Desk             F=0.00  P=0.00  R=0.00  UNMATCHED
+  Bed              F=0.00  P=0.00  R=0.00  UNMATCHED
