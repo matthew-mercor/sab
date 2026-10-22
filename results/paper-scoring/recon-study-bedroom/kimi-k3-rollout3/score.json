@@ -1,0 +1,61 @@
+{
+ "reward": 0.0,
+ "metric": "obj_f@5%_matched (SceneActBench primary F@5%)",
+ "per_object": [
+  {
+   "part": "TV_Stand",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": null
+  },
+  {
+   "part": "Side_Table",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": null
+  },
+  {
+   "part": "Sofa",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": null
+  },
+  {
+   "part": "Desk_Chair",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": null
+  },
+  {
+   "part": "Desk",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": null
+  },
+  {
+   "part": "Bed",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": null
+  }
+ ],
+ "error": "ValueError('agent scene has fewer than 10 mesh vertices')"
+}

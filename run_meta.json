@@ -1,0 +1,11 @@
+{
+  "task": "recon-study-bedroom",
+  "agent": "kimi",
+  "label": "kimi-k3-rollout3",
+  "model": "moonshotai/kimi-k3",
+  "harbor": "0.23.0",
+  "run_start": "2026-10-22T15:36:32Z",
+  "harbor_seconds": 652,
+  "gateway_usd_used_during_run": 3.8648,
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/39806407667"
+}
