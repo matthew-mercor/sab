@@ -1,0 +1,90 @@
+{
+ "reward": 0.1050306982839419,
+ "metric": "obj_f@5%_matched (SceneActBench primary F@5%)",
+ "per_object": [
+  {
+   "part": "TV_Stand",
+   "matched": true,
+   "n_pred": 852,
+   "f@5%": 0.27304847575008706,
+   "precision": 0.4647887323943662,
+   "recall": 0.19330426690210703,
+   "pos_err_m": 0.6568690634564259
+  },
+  {
+   "part": "Side_Table",
+   "matched": true,
+   "n_pred": 1380,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": 2.0460978721352014
+  },
+  {
+   "part": "Sofa",
+   "matched": true,
+   "n_pred": 416,
+   "f@5%": 0.12470347550025927,
+   "precision": 0.84375,
+   "recall": 0.06732709972401862,
+   "pos_err_m": 0.9786019109030463
+  },
+  {
+   "part": "Desk_Chair",
+   "matched": true,
+   "n_pred": 84,
+   "f@5%": 0.008267159795496573,
+   "precision": 0.5,
+   "recall": 0.004168037731709992,
+   "pos_err_m": 0.698810005275843
+  },
+  {
+   "part": "Desk",
+   "matched": true,
+   "n_pred": 42,
+   "f@5%": 0.1436190608986649,
+   "precision": 0.8333333333333334,
+   "recall": 0.0785809650963189,
+   "pos_err_m": 1.0923318583816
+  },
+  {
+   "part": "Bed",
+   "matched": true,
+   "n_pred": 42,
+   "f@5%": 0.08054601775914365,
+   "precision": 1.0,
+   "recall": 0.04196298452808471,
+   "pos_err_m": 1.0316610857416162
+  }
+ ],
+ "n_clusters": 6,
+ "match_rate": 1.0,
+ "mean_pos_err_m": 1.0840619659822888,
+ "points": {
+  "agent_vertices": 2816,
+  "answer_key_vertices": 660162,
+  "agent_source": "agent_verts.json"
+ },
+ "audit": {
+  "region_obj_f@5%": 0.06339483041226983,
+  "object_coverage": 0.0,
+  "scene_f@5%": 0.42931299666752115,
+  "scene_recall@5%": 0.319,
+  "scene_prec@5%": 0.65625,
+  "chamfer_aligned": 0.8587022655135668
+ },
+ "diagnostics": {
+  "alignment_yaw_deg": 32.29194653540089,
+  "alignment_scale": 0.702506630587118,
+  "alignment_turned_over_45deg": false,
+  "task_frame_f@5%": 0.1050306982839419,
+  "task_frame_per_object": {
+   "TV_Stand": 0.27304847575008706,
+   "Side_Table": 0.0,
+   "Sofa": 0.12470347550025927,
+   "Desk_Chair": 0.008267159795496573,
+   "Desk": 0.1436190608986649,
+   "Bed": 0.08054601775914365
+  }
+ }
+}

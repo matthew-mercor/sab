@@ -1,0 +1,9 @@
+[export] scene taken from: live Blender; vertices: agent_verts.json
+{"reward": 0.1050306982839419, "metric": "obj_f@5%_matched (SceneActBench primary F@5%)", "n_clusters": 6, "match_rate": 1.0, "mean_pos_err_m": 1.0840619659822888, "points": {"agent_vertices": 2816, "answer_key_vertices": 660162, "agent_source": "agent_verts.json"}, "audit": {"region_obj_f@5%": 0.06339483041226983, "object_coverage": 0.0, "scene_f@5%": 0.42931299666752115, "scene_recall@5%": 0.319, "scene_prec@5%": 0.65625, "chamfer_aligned": 0.8587022655135668}}
+diagnostic (not the reward): alignment turned the scene 32 deg; score with the starting turn fixed to 0 deg = 0.105
+  TV_Stand         F=0.27  P=0.46  R=0.19  matched
+  Side_Table       F=0.00  P=0.00  R=0.00  matched
+  Sofa             F=0.12  P=0.84  R=0.07  matched
+  Desk_Chair       F=0.01  P=0.50  R=0.00  matched
+  Desk             F=0.14  P=0.83  R=0.08  matched
+  Bed              F=0.08  P=1.00  R=0.04  matched
