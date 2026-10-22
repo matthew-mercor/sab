@@ -1,0 +1,11 @@
+{
+  "task": "recon-study-bedroom",
+  "agent": "oracle",
+  "label": "golden",
+  "model": null,
+  "harbor": "0.23.0",
+  "run_start": "2026-10-22T15:32:38Z",
+  "harbor_seconds": 90,
+  "gateway_usd_used_during_run": null,
+  "run_url": "https://github.com/matthew-mercor/sab/actions/runs/39805792932"
+}
