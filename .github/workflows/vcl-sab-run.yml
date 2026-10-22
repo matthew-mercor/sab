@@ -1,0 +1,204 @@
+name: VCL SceneActBench run
+
+# One Harbor run of a SceneActBench task from the updated-vcl-sample repo (copied into vcl-sab/).
+#   agent oracle: grades the answer key (the golden). Must be >= 0.9.
+#   agent nop:    grades an empty scene. Must be 0.
+#   agent kimi:   one Kimi K3 rollout with the repo's SceneActBench agent (35 steps) through the
+#                 Vercel AI Gateway (secret AI_GATEWAY_API_KEY). Must be < 0.7.
+# The results, packaged like results/paper-scoring/<task>/<label>/, go to the branch
+# vclres/<task>-<label> and to a workflow artifact.
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: Task folder name in vcl-sab/tasks (for example recon-study-bedroom)
+        required: true
+        type: string
+      agent:
+        description: oracle, nop or kimi
+        required: true
+        type: choice
+        options: [oracle, nop, kimi]
+      label:
+        description: Results folder name (for example golden, nop, kimi-k3-rollout1)
+        required: true
+        type: string
+
+run-name: vcl ${{ inputs.task }} ${{ inputs.label }}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TASK: ${{ inputs.task }}
+      AGENT: ${{ inputs.agent }}
+      LABEL: ${{ inputs.label }}
+      MODEL: moonshotai/kimi-k3
+      BLENDER_VERSION: "4.2.23"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check inputs
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          for v in "$TASK" "$LABEL"; do
+            case "$v" in "" | *[!A-Za-z0-9._-]*) echo "::error::task and label may use only letters, digits, '.', '_' and '-'"; exit 1 ;; esac
+          done
+          test -f "vcl-sab/tasks/$TASK/task.toml" || { echo "::error::vcl-sab/tasks/$TASK not found"; exit 1; }
+          if [ "$AGENT" = kimi ] && [ -z "$AI_GATEWAY_API_KEY" ]; then echo "::error::Add the repository secret AI_GATEWAY_API_KEY"; exit 1; fi
+          date -u +%Y-%m-%dT%H:%M:%SZ > "$RUNNER_TEMP/run_start.txt"
+
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install Harbor and the Python tools
+        run: |
+          uv tool install "harbor==0.23.0"
+          python -m pip install -r vcl-sab/requirements.txt
+
+      - name: Cache Blender
+        id: blender-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/blender
+          key: blender-${{ env.BLENDER_VERSION }}-linux-x64
+
+      - name: Install Blender (for the comparison renders)
+        if: steps.blender-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/blender
+          curl -fsSL "https://download.blender.org/release/Blender${BLENDER_VERSION%.*}/blender-${BLENDER_VERSION}-linux-x64.tar.xz" \
+            | tar -xJ -C ~/blender --strip-components=1
+
+      - name: Blender system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libx11-6 libxi6 libxxf86vm1 libxfixes3 libxrender1 libxkbcommon0 libsm6 libice6 libxext6 \
+            libgl1 libegl1 libglu1-mesa libgl1-mesa-dri libegl-mesa0 libgbm1
+          echo "BLENDER=$HOME/blender/blender" >> "$GITHUB_ENV"
+
+      - name: Fit the task to the runner
+        run: |
+          CPUS=$(nproc); MEM_MB=$(awk '/MemTotal/ {print int($2/1024)}' /proc/meminfo)
+          FLAGS=""
+          if [ "$CPUS" -lt 4 ]; then FLAGS="$FLAGS --override-cpus $CPUS"; fi
+          LIMIT=$((MEM_MB - 1024)); if [ "$LIMIT" -lt 8192 ]; then FLAGS="$FLAGS --override-memory-mb $LIMIT"; fi
+          echo "HARBOR_FLAGS=$FLAGS" >> "$GITHUB_ENV"
+          echo "runner: $CPUS CPUs, $MEM_MB MB; harbor flags:$FLAGS"
+
+      - name: Gateway credits before
+        if: ${{ env.AGENT == 'kimi' }}
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          curl -fsS -m 30 -H "Authorization: Bearer $AI_GATEWAY_API_KEY" https://ai-gateway.vercel.sh/v1/credits -o "$RUNNER_TEMP/credits_before.json" || true
+
+      - name: Harbor run
+        working-directory: vcl-sab
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          date -u +%s > "$RUNNER_TEMP/harbor_start"
+          # shellcheck disable=SC2086
+          if [ "$AGENT" = kimi ]; then
+            PYTHONPATH="$PWD/agents" harbor run -y -p "tasks/$TASK" -a sceneactbench_agent.harbor_agent:SceneActBenchAgent \
+              -m "$MODEL" --ak api_key_env=AI_GATEWAY_API_KEY -o "$GITHUB_WORKSPACE/jobs" $HARBOR_FLAGS
+          else
+            harbor run -y -p "tasks/$TASK" -a "$AGENT" -o "$GITHUB_WORKSPACE/jobs" $HARBOR_FLAGS
+          fi
+          date -u +%s > "$RUNNER_TEMP/harbor_end"
+
+      - name: Gateway credits after
+        if: ${{ !cancelled() && env.AGENT == 'kimi' }}
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          curl -fsS -m 30 -H "Authorization: Bearer $AI_GATEWAY_API_KEY" https://ai-gateway.vercel.sh/v1/credits -o "$RUNNER_TEMP/credits_after.json" || true
+
+      - name: Package the results
+        if: ${{ !cancelled() }}
+        working-directory: vcl-sab
+        run: |
+          OUT="$RUNNER_TEMP/out/results/paper-scoring/$TASK/$LABEL"
+          mkdir -p "$OUT"
+          RES=$(find "$GITHUB_WORKSPACE/jobs" -mindepth 3 -maxdepth 3 -name result.json 2>/dev/null | head -1)
+          T=""; [ -n "$RES" ] && T=$(dirname "$RES")
+          if [ -z "$T" ] || [ ! -f "$T/verifier/reward.txt" ]; then
+            echo "No verifier reward. The run did not finish." | tee "$OUT/NO_SCORE.txt"
+          else
+            for f in score.json reward.txt agent_verts.json test-stdout.txt export.log; do
+              [ -f "$T/verifier/$f" ] && cp "$T/verifier/$f" "$OUT/"
+            done
+            if [ "$AGENT" = kimi ]; then
+              cp "$T/verifier/agent_scene.glb" "$OUT/" 2>/dev/null || true
+              cp "$T/agent/steps.json" "$T/agent/run_summary.json" "$OUT/" 2>/dev/null || true
+              cp "$T/artifacts/app/output/.autosave.blend" "$OUT/rollout.blend" 2>/dev/null || true
+              python tooling/report.py "$T" --task "tasks/$TASK" --out "$RUNNER_TEMP/report" --model "Kimi K3" || true
+              cp "$RUNNER_TEMP/report/input_vs_output.png" "$OUT/" 2>/dev/null || true
+              mkdir -p "$RUNNER_TEMP/out/renders/$LABEL"
+              cp "$RUNNER_TEMP"/report/model_view*.png "$RUNNER_TEMP/out/renders/$LABEL/" 2>/dev/null || true
+            fi
+            python tooling/explain_score.py "tasks/$TASK" "$OUT" --label "$LABEL" || true
+            echo "reward: $(cat "$OUT/reward.txt")" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
+          python - "$RUNNER_TEMP/out/run_meta.json" <<'EOF'
+          import json, os, sys
+          t = os.environ["RUNNER_TEMP"]
+          def load(n):
+              try: return json.load(open(os.path.join(t, n)))
+              except Exception: return None
+          def num(n):
+              try: return int(open(os.path.join(t, n)).read())
+              except Exception: return None
+          b, a = load("credits_before.json"), load("credits_after.json")
+          used = None
+          try: used = round(float(a["total_used"]) - float(b["total_used"]), 4)
+          except Exception: pass
+          hs, he = num("harbor_start"), num("harbor_end")
+          json.dump({"task": os.environ["TASK"], "agent": os.environ["AGENT"], "label": os.environ["LABEL"],
+                     "model": os.environ["MODEL"] if os.environ["AGENT"] == "kimi" else None, "harbor": "0.23.0",
+                     "run_start": open(os.path.join(t, "run_start.txt")).read().strip(),
+                     "harbor_seconds": (he - hs) if hs and he else None,
+                     "gateway_usd_used_during_run": used,
+                     "run_url": f'{os.environ["GITHUB_SERVER_URL"]}/{os.environ["GITHUB_REPOSITORY"]}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'},
+                    open(sys.argv[1], "w"), indent=2)
+          EOF
+          cat "$RUNNER_TEMP/out/run_meta.json"
+
+      - name: Upload the Harbor job folder
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-${{ inputs.task }}-${{ inputs.label }}
+          path: jobs/
+          if-no-files-found: warn
+
+      - name: Push the results branch
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          cd "$RUNNER_TEMP/out"
+          if [ -n "$AI_GATEWAY_API_KEY" ]; then
+            grep -rlF -e "$AI_GATEWAY_API_KEY" . | while read -r f; do echo "removed (contains a key): $f"; rm -f "$f"; done
+          fi
+          find . -type f -size +95M -print -delete
+          BR="vclres/$TASK-$LABEL"
+          git init -q -b main && git add -A
+          git -c user.name="l-matthew07" -c user.email="140662900+l-matthew07@users.noreply.github.com" commit -q -m "Results: $TASK $LABEL"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/$BR"
+          echo "Results are on the branch $BR" | tee -a "$GITHUB_STEP_SUMMARY"

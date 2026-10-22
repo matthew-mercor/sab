@@ -1,0 +1,40 @@
+schema_version = "1.4"
+artifacts = ["/app/output"]
+
+[task]
+name = "sceneactbench/recon-study-bedroom"
+description = "SceneActBench Reconstruction: rebuild the furniture of a study bedroom in Blender from 11 reference views with known camera poses."
+keywords = ["sceneactbench", "3d", "blender", "reconstruction", "vision", "mcp"]
+
+[metadata]
+benchmark = "SceneActBench"
+task_type = "task5_recon"
+sample = "Study bedroom"
+source_blend = "study-bedroom.blend"
+golden_items = ["Bed", "Desk", "Desk_Chair", "Sofa", "Side_Table", "TV_Stand"]
+n_golden_objects = 6
+n_reference_views = 11
+fov_x_deg = 39.6
+step_budget_reference = 35
+reward_metric = "obj_f@5%_matched (the paper's primary F@5%: DBSCAN + Hungarian match, each cluster moved onto its object, per-object F-score at 5% of object size; official scorer; answer key in Blender Z-up; objects kept by the paper's furniture-name filter plus our added furniture types)"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 7200.0
+
+[environment]
+build_timeout_sec = 1800.0
+network_mode = "public"
+cpus = 4
+memory_mb = 8192
+workdir = "/app"
+
+[[environment.mcp_servers]]
+name = "blender"
+transport = "stdio"
+command = "/opt/sceneactbench/blender_mcp_stdio.sh"
+args = []
+
+[solution.env]
