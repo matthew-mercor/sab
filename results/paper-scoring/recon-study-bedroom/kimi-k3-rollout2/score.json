@@ -1,0 +1,90 @@
+{
+ "reward": 0.011458039838460422,
+ "metric": "obj_f@5%_matched (SceneActBench primary F@5%)",
+ "per_object": [
+  {
+   "part": "TV_Stand",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": NaN
+  },
+  {
+   "part": "Side_Table",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": NaN
+  },
+  {
+   "part": "Sofa",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": NaN
+  },
+  {
+   "part": "Desk_Chair",
+   "matched": true,
+   "n_pred": 184,
+   "f@5%": 0.06874823903076253,
+   "precision": 0.2391304347826087,
+   "recall": 0.04014478446857519,
+   "pos_err_m": 0.5027225085642162
+  },
+  {
+   "part": "Desk",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": NaN
+  },
+  {
+   "part": "Bed",
+   "matched": false,
+   "n_pred": 0,
+   "f@5%": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "pos_err_m": NaN
+  }
+ ],
+ "n_clusters": 1,
+ "match_rate": 0.16666666666666666,
+ "mean_pos_err_m": 0.5027225085642162,
+ "points": {
+  "agent_vertices": 196,
+  "answer_key_vertices": 660162,
+  "agent_source": "agent_verts.json"
+ },
+ "audit": {
+  "region_obj_f@5%": 0.03893016022874862,
+  "object_coverage": 0.0,
+  "scene_f@5%": 0.12103496806322397,
+  "scene_recall@5%": 0.065,
+  "scene_prec@5%": 0.8775510204081632,
+  "chamfer_aligned": 1.295745680480237
+ },
+ "diagnostics": {
+  "alignment_yaw_deg": 93.32728701838901,
+  "alignment_scale": 1.6805186180444491,
+  "alignment_turned_over_45deg": true,
+  "task_frame_f@5%": 0.012250043391279724,
+  "task_frame_per_object": {
+   "TV_Stand": 0.0,
+   "Side_Table": 0.0,
+   "Sofa": 0.0,
+   "Desk_Chair": 0.07350026034767834,
+   "Desk": 0.0,
+   "Bed": 0.0
+  }
+ }
+}

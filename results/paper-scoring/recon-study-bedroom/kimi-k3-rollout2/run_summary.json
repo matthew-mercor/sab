@@ -1,0 +1,9 @@
+{
+ "model": "moonshotai/kimi-k3",
+ "finished": false,
+ "error": "max_steps reached",
+ "num_steps": 35,
+ "elapsed_sec": 762.5,
+ "reference_images": 11,
+ "max_steps": 35
+}
